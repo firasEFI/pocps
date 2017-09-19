@@ -41,7 +41,7 @@ RUN echo 'export ORACLE_HOME=/opt/oracle/product/12.1.0.2/dbhome_1' >> /home/ora
     echo 'export PATH=$ORACLE_HOME/bin:$ORACLE_HOME/perl/bin:$ORACLE_HOME/perl/lib:/opt/oracle/product/sqlcl/bin:$PATH' >> /home/oracle/.bashrc && \
     echo 'export NLS_LANG=danish_denmark.al32utf8' >> /home/oracle/.bashrc
 
-#COPY createusers.sql /opt/oracle/scripts/startup/
+COPY startupscripts/ /opt/oracle/scripts/startup/
 
 USER oracle
 WORKDIR /home/oracle
