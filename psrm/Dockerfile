@@ -20,7 +20,7 @@ RUN unzip -oq /tmp/$FMW_PKG -d /tmp/extracted
 RUN chown -R cissys:cisusr /tmp/extracted/$FMW_JAR
 
 USER cissys
-RUN $JAVA_HOME/bin/java -D64 -jar /tmp/extracted/$FMW_JAR -silent -responseFile /tmp/weblogic_install.rsp -invPtrLoc /tmp/oraInst.loc ORACLE_HOME=$ORACLE_HOME
+RUN $JAVA_HOME/bin/java -D64 -jar /tmp/extracted/$FMW_JAR -silent -ignoreSysPrereqs -responseFile /tmp/weblogic_install.rsp -invPtrLoc /tmp/oraInst.loc ORACLE_HOME=$ORACLE_HOME
 
 USER root
 # cleaning up
@@ -59,5 +59,6 @@ WORKDIR /tmp/release
 
 COPY StartPSRM.sh /tmp/release/
 
-#CMD ["/bin/bash"]
 CMD ./StartPSRM.sh DOCKER 7068 '' '' ''; sleep infinity
+
+EXPOSE 6500 6501 6502 6503 6104 7101
