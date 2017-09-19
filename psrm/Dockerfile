@@ -49,8 +49,6 @@ RUN yum clean all
 RUN cd /tmp && curl -s get.sdkman.io | bash
 RUN source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install groovy
 
-ADD binaries/hostname/hostname-3.13-3.el7.x86_64.rpm /tmp/
-RUN yum install -y /tmp/hostname-3.13-3.el7.x86_64.rpm
 
 USER cissys
 
