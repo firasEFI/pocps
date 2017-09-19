@@ -20,7 +20,7 @@ RUN unzip -oq /tmp/$FMW_PKG -d /tmp/extracted
 RUN chown -R cissys:cisusr /tmp/extracted/$FMW_JAR
 
 USER cissys
-RUN $JAVA_HOME/bin/java -D64 -jar /tmp/extracted/$FMW_JAR -silent -ignoreSysPrereqs -responseFile /tmp/weblogic_install.rsp -invPtrLoc /tmp/oraInst.loc ORACLE_HOME=$ORACLE_HOME
+RUN $JAVA_HOME/bin/java -D64 -jar /tmp/extracted/$FMW_JAR -silent -responseFile /tmp/weblogic_install.rsp -invPtrLoc /tmp/oraInst.loc ORACLE_HOME=$ORACLE_HOME
 
 USER root
 # cleaning up
@@ -49,7 +49,15 @@ RUN yum clean all
 RUN cd /tmp && curl -s get.sdkman.io | bash
 RUN source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install groovy
 
+COPY sudoers /etc/
 
-USER cissys
+COPY binaries/UnlimitedJCEPolicyJDK8/local_policy.jar binaries/UnlimitedJCEPolicyJDK8/US_export_policy.jar /usr/java/jdk1.8.0_144/jre/lib/security/
 
-CMD ["/bin/bash"]
+RUN usermod -a -G cissys oracle
+#USER cissys
+WORKDIR /tmp/release
+
+COPY StartPSRM.sh /tmp/release/
+
+#CMD ["/bin/bash"]
+CMD ./StartPSRM.sh DOCKER 7068 '' '' ''; sleep infinity
