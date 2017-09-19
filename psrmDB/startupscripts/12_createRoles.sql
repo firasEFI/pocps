@@ -1,0 +1,3 @@
+alter session set "_ORACLE_SCRIPT"=true;
+CREATE ROLE CIS_USER;
+CREATE ROLE CIS_READ;
