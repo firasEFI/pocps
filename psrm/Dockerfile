@@ -57,8 +57,8 @@ RUN usermod -a -G cissys oracle
 #USER cissys
 WORKDIR /tmp/release
 
-COPY StartPSRM.sh /tmp/release/
+COPY StartPSRM.sh /usr/bin/
 
-CMD ./StartPSRM.sh DOCKER 7068 '' '' ''; sleep infinity
+CMD /usr/bin/StartPSRM.sh DOCKER 7068 '' '' ''; sleep infinity
 
 EXPOSE 6500 6501 6502 6503 6104 7101
