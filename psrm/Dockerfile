@@ -52,4 +52,6 @@ RUN source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install groovy
 
 USER cissys
 
-CMD ["/bin/bash"]
+#CMD ["/bin/bash"]
+EXPOSE 6500 6501 6502 6503 6104 7101
+
