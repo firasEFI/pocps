@@ -15,7 +15,7 @@ OSUSER="cissys"
 PSRMPATH="/software/oracle/product/ouaf/psrmdev/"
 PSRMENV="psrmdev"
 
-sudo chmod -R 775 "$DIRECTORY/Utilities"
+#sudo chmod -R 775 "$DIRECTORY/Utilities"
 
 sudo -u $OSUSER -i<<EOT
 if [ "$MODE" != "native" ]; then
