@@ -57,7 +57,7 @@ RUN usermod -a -G cissys oracle
 #USER cissys
 WORKDIR /tmp/release
 
-COPY StartPSRM.sh /usr/bin/
+ADD StartPSRM.sh /usr/bin/
 
 CMD /usr/bin/StartPSRM.sh DOCKER 7068 '' '' ''; sleep infinity
 
