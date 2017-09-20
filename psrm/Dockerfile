@@ -58,7 +58,7 @@ RUN usermod -a -G cissys oracle
 WORKDIR /tmp/release
 
 ADD StartPSRM.sh /usr/bin/
-
+RUN chmod +x /usr/bin/StartPSRM.sh
 CMD /usr/bin/StartPSRM.sh DOCKER 7068 '' '' ''; sleep infinity
 
 EXPOSE 6500 6501 6502 6503 6104 7101
