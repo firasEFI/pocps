@@ -40,6 +40,8 @@ COPY oracle-rdbms-server-12cR1-preinstall.conf /etc/security/limits.d/
 RUN echo 'export ORACLE_HOME=/opt/oracle/product/12.1.0.2/dbhome_1' >> /home/oracle/.bashrc && \
     echo 'export PATH=$ORACLE_HOME/bin:$ORACLE_HOME/perl/bin:$ORACLE_HOME/perl/lib:/opt/oracle/product/sqlcl/bin:$PATH' >> /home/oracle/.bashrc && \
     echo 'export NLS_LANG=danish_denmark.al32utf8' >> /home/oracle/.bashrc
+#Copy sudoers
+COPY sudoers /etc/
 
 #COPY startupscripts/ /opt/oracle/scripts/startup/
 
