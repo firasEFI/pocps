@@ -1,2 +1,2 @@
 FROM psrmdb
-ADD oradata.tar.gz /opt/oracle/oradata
+ADD oradata.tar.gz /opt/oracle/
