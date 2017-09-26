@@ -33,7 +33,9 @@ RUN mkdir -p /software/oracle/product/ouaf/psrmdev && chown -R cissys:cisusr /so
     mkdir -p /data/logs/ouaf/psrmdev && chown -R cissys:cisusr /data/logs/ouaf
 
 USER cissys
-ADD binaries/psrmdev/psrmdev.tar.gz /
+
+#ADD binaries/psrmdev/psrmdev.tar.gz /
+ADD binaries/psrmdev/psrmdev.tar.gz /software/oracle/product/ouaf/
 
 USER root
 ADD binaries/opa/opa.zip /tmp/
