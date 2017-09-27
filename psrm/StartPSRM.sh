@@ -30,7 +30,7 @@ do
        cond=OK;
    fi
 
-  sleep 10
+  sleep 30
 
 done
 
