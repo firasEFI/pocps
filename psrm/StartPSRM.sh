@@ -16,6 +16,12 @@ PSRMPATH="/software/oracle/product/ouaf/psrmdev/"
 PSRMENV="psrmdev"
 
 #Wait until PSRM can reach the database
+
+
+#sudo chmod -R 775 "$DIRECTORY/Utilities"
+
+sudo -u $OSUSER -i<<EOT
+
 cond=NOK
 while [ $cond != OK ]
 do
@@ -28,9 +34,6 @@ do
 
 done
 
-#sudo chmod -R 775 "$DIRECTORY/Utilities"
-
-sudo -u $OSUSER -i<<EOT
 if [ "$MODE" != "native" ]; then
 	cd "$PSRMPATH"'bin/';
     . ./splenviron.sh -e "$PSRMENV";
