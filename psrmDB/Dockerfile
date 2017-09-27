@@ -47,7 +47,7 @@ COPY sudoers /etc/
 
 COPY healthcheck.sh /usr/sbin/healthcheck.sh
 
-HEALTHCHECK --interval=10s --retries=15 CMD [ "/usr/sbin/healthcheck.sh"]
+HEALTHCHECK --interval=20s --retries=4 CMD [ "/usr/sbin/healthcheck.sh"]
 
 USER oracle
 WORKDIR /home/oracle
