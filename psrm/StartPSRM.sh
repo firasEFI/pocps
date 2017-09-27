@@ -22,12 +22,12 @@ PSRMENV="psrmdev"
 sudo -u $OSUSER -i<<EOT
 
 #Wait until PSRM can reach the database
-cond=NOK
-while [ $cond != OK ]
+cond="NOK"
+while [ "$cond" != "OK" ]
 do
   if echo "exit" | sqlplus CISADM/Icisk2016@orasqlserver:1521/ORCLCDB | grep Connected > /dev/null
      then
-       cond=OK;
+       cond="OK";
    fi
 
   sleep 30
