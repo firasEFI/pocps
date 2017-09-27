@@ -15,6 +15,19 @@ OSUSER="cissys"
 PSRMPATH="/software/oracle/product/ouaf/psrmdev/"
 PSRMENV="psrmdev"
 
+#Wait until PSRM can reach the database
+cond=NOK
+while [ $cond != OK ]
+do
+  if echo "exit" | sqlplus CISADM/Icisk2016@orasqlserver:1521/ORCLCDB | grep Connected > /dev/null
+     then
+       cond=OK;
+   fi
+
+  sleep 10
+
+done
+
 #sudo chmod -R 775 "$DIRECTORY/Utilities"
 
 sudo -u $OSUSER -i<<EOT
