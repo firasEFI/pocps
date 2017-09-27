@@ -45,10 +45,6 @@ COPY sudoers /etc/
 
 #COPY startupscripts/ /opt/oracle/scripts/startup/
 
-COPY healthcheck.sh /usr/sbin/healthcheck.sh
-
-HEALTHCHECK --interval=20s --retries=4 CMD [ "/usr/sbin/healthcheck.sh"]
-
 USER oracle
 WORKDIR /home/oracle
 ENV NLS_LANG=danish_denmark.al32utf8
