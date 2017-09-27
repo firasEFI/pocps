@@ -18,21 +18,15 @@ PSRMENV="psrmdev"
 
 
 #sudo chmod -R 775 "$DIRECTORY/Utilities"
+#Wait until PSRM can reach the database
 
 sudo -u $OSUSER -i<<EOT
-
 #Wait until PSRM can reach the database
-cond="NOK"
-while [ "$cond" != "OK" ]
-do
-  if echo "exit" | sqlplus CISADM/Icisk2016@orasqlserver:1521/ORCLCDB | grep Connected > /dev/null
-     then
-       cond="OK";
-   fi
+while  /software/oracle/product/oracle_client/12.1.0.2/bin/sqlplus CISADM/Icisk2016@orasqlserver:1521/ORCLCDB | grep Connected; do sleep 10; done
 
-  sleep 30
+EOT
 
-done
+sudo -u $OSUSER -i<<EOT
 
 if [ "$MODE" != "native" ]; then
 	cd "$PSRMPATH"'bin/';
