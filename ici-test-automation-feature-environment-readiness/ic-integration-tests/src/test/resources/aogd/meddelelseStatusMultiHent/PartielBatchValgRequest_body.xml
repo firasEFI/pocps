@@ -1,0 +1,14 @@
+<ns:MeddelelseStatusMultiHent_I xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+    <ns:SøgeValg>
+        <ns:PartielBatchValg>
+            <ns:FagsystemNavn>EFI</ns:FagsystemNavn>
+            <ns:MeddelelseBatchID>${Properties#MeddelelseBatchID}</ns:MeddelelseBatchID>
+            <ns:MeddelelseStart>
+                <ns:MeddelelseAfsenderReference>${Properties#StartRef}</ns:MeddelelseAfsenderReference>
+            </ns:MeddelelseStart>
+            <ns:MeddelelseSlut>
+                <ns:MeddelelseAfsenderReference>${Properties#SlutRef}</ns:MeddelelseAfsenderReference>
+            </ns:MeddelelseSlut>
+        </ns:PartielBatchValg>
+    </ns:SøgeValg>
+</ns:MeddelelseStatusMultiHent_I>

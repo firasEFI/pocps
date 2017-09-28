@@ -1,0 +1,32 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header/>
+    <soap:Body>
+        <MFFordringIndberet_I xmlns="http://skat.dk/begrebsmodel/2009/01/15/">
+            <Kontekst/>
+            <FordringhaverSystemIDStruktur>
+                <VirksomhedSENummer>62786515</VirksomhedSENummer>
+            </FordringhaverSystemIDStruktur>
+            <MFLeveranceID>1500467630061</MFLeveranceID>
+            <FordringAktionSamling>
+                <FordringAktion>
+                    <MFAktionKode>NEDSKRIVNINGANNULLERETOPSKRIVNINGREGULERING</MFAktionKode>
+                    <DMIFordringHaverID>1229</DMIFordringHaverID>
+                    <AktionValg>
+                        <MFNedskrivningAnnulleretOpskrivningReguleringStruktur>
+                            <DMIFordringEFIFordringID>110000001004</DMIFordringEFIFordringID>
+                            <DMIFordringModtagelseDato>2017-07-19T14:31:26.532</DMIFordringModtagelseDato>
+                            <MFAktionID>CHANGE_MFAktionID</MFAktionID>
+                            <MFAktionIDRef>110000000334</MFAktionIDRef>
+                            <FordringNedskrivningVirkningFra>2017-07-19</FordringNedskrivningVirkningFra>
+                            <FordringNedskrivningÅrsagBegr>Fordring Nedskrivning Aarsag Begrundelse Tekst</FordringNedskrivningÅrsagBegr>
+                            <NedskrivningBeløbStruktur>
+                                <ValutaKode>DKK</ValutaKode>
+                                <FordringNedskrivningBeløb>5000</FordringNedskrivningBeløb>
+                            </NedskrivningBeløbStruktur>
+                        </MFNedskrivningAnnulleretOpskrivningReguleringStruktur>
+                    </AktionValg>
+                </FordringAktion>
+            </FordringAktionSamling>
+        </MFFordringIndberet_I>
+    </soap:Body>
+</soap:Envelope>

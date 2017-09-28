@@ -1,0 +1,50 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+    <soap:Header/>
+    <soap:Body>
+        <MFFordringIndberet_I xmlns="http://skat.dk/begrebsmodel/2009/01/15/">
+            <Kontekst/>
+            <FordringhaverSystemIDStruktur>
+                <VirksomhedSENummer>62786515</VirksomhedSENummer>
+            </FordringhaverSystemIDStruktur>
+            <MFLeveranceID>1500367704820</MFLeveranceID>
+            <FordringAktionSamling>
+                <FordringAktion>
+                    <MFAktionKode>OPSKRIVNINGREGULERING</MFAktionKode>
+                    <DMIFordringHaverID>1229</DMIFordringHaverID>
+                    <AktionValg>
+                        <MFOpskrivningReguleringStruktur>
+                            <DMIFordringEFIFordringID>156164889156</DMIFordringEFIFordringID>
+                            <DMIFordringModtagelseDato>2017-06-19T00:00:00.001</DMIFordringModtagelseDato>
+                            <MFAktionID>CHANGE_MFAktionID</MFAktionID>
+                            <FordringOpskrivningVirkningFra>2017-04-25</FordringOpskrivningVirkningFra>
+                            <OpskrivningÅrsagStruktur>
+                                <FordringOpskrivningÅrsagBegr>aarsag IS-20578</FordringOpskrivningÅrsagBegr>
+                            </OpskrivningÅrsagStruktur>
+                            <SagsbemærkningSamling>
+                                <MFNoteStruktur>
+                                    <MFNoteTekst>noteTekst IS-20578</MFNoteTekst>
+                                </MFNoteStruktur>
+                            </SagsbemærkningSamling>
+                            <DokumentSamling>
+                                <MFDokumentStruktur>
+                                    <DPDokumentArt>ANDET</DPDokumentArt>
+                                    <DokumentFormatValg>
+                                        <DokumentFil>
+                                            <DokumentFilType>dokumentFilType IS-20578</DokumentFilType>
+                                            <DokumentFilIndhold>dokumentFilIndhold IS-20578</DokumentFilIndhold>
+                                        </DokumentFil>
+                                    </DokumentFormatValg>
+                                </MFDokumentStruktur>
+                            </DokumentSamling>
+                            <HoeringJournalNummer>12345</HoeringJournalNummer>
+                            <OpskrivningBeløbStruktur>
+                                <ValutaKode>DKK</ValutaKode>
+                                <FordringOpskrivningBeløb>800</FordringOpskrivningBeløb>
+                            </OpskrivningBeløbStruktur>
+                        </MFOpskrivningReguleringStruktur>
+                    </AktionValg>
+                </FordringAktion>
+            </FordringAktionSamling>
+        </MFFordringIndberet_I>
+    </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="dk.rim.is.abt.dao.cisadm.CiPerIdEntity">
+        <table name="CI_PER_ID" schema="CISADM" catalog=""/>
+        <id-class class="dk.rim.is.abt.dao.cisadm.CiPerIdEntityPK"/>
+        <attributes>
+            <id name="perId">
+                <column name="PER_ID" length="10"/>
+            </id>
+            <id name="idTypeCd">
+                <column name="ID_TYPE_CD" length="8"/>
+            </id>
+            <basic name="perIdNbr">
+                <column name="PER_ID_NBR" length="16"/>
+            </basic>
+            <basic name="primSw">
+                <column name="PRIM_SW" length="1"/>
+            </basic>
+            <basic name="version">
+                <column name="VERSION" precision="5"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,41 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:SagOpdater_I revision="gero et">
+            <ns:Kontekst>
+                <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
+                    <tsk:TransaktionsID>49705142-cb3f-4428-b507-c0235fc744be_TEST</tsk:TransaktionsID>
+                    <tsk:TransaktionsTid>2016-11-29T12:04:22Z</tsk:TransaktionsTid>
+                </tsk:HovedOplysninger>
+            </ns:Kontekst>
+            <ns:Sag>
+                <ns:SagIdentifikationValg>
+                    <ns:EnhedsagIdentifikation>
+                        <ns:SagNummer>${Properties#SagNummer}</ns:SagNummer>
+                    </ns:EnhedsagIdentifikation>
+                </ns:SagIdentifikationValg>
+                <ns:SagOplysninger>
+                    <ns:SagTitel>
+                        <ns:Opdater>
+                            <ns:SagTitel>Case title</ns:SagTitel>
+                        </ns:Opdater>
+                        <ns:SletMarkering>true</ns:SletMarkering>
+                    </ns:SagTitel>
+                    <ns:SagPartValgListe/>
+                    <ns:SagEmneordListe/>
+                    <ns:SagErindringListe/>
+                    <ns:SagFriDatoListe/>
+                    <ns:SagFriOplysningListe/>
+                    <ns:Sagsbehandler>
+                        <ns:SletMarkering>false</ns:SletMarkering>
+                    </ns:Sagsbehandler>
+                    <ns:SagBetaling>
+                        <ns:SletMarkering>false</ns:SletMarkering>
+                    </ns:SagBetaling>
+                    <ns:SagRelationListe/>
+                    <ns:DokumentTilknytningListe/>
+                </ns:SagOplysninger>
+            </ns:Sag>
+        </ns:SagOpdater_I>
+    </soapenv:Body>
+</soapenv:Envelope>

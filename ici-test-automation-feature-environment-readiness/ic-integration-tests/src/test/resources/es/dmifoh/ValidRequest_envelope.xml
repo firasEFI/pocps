@@ -1,0 +1,22 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:DMIFordringOverblikHent_I>
+            <ns:Kontekst>
+                <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
+                    <tsk:TransaktionsID>TRANSACTION_ID</tsk:TransaktionsID>
+                    <tsk:TransaktionsTid>2017-01-18T12:03:10Z</tsk:TransaktionsTid>
+                </tsk:HovedOplysninger>
+            </ns:Kontekst>
+            <ns:DMIFordringOverblikAnvendelseKode>ESCHECK</ns:DMIFordringOverblikAnvendelseKode>
+            <ns:DMIIndberetterOpretStruktur>
+                <ns:DMIIndberetterID>ESFordOvrblk</ns:DMIIndberetterID>
+                <ns:DMIIndberetterRolle>System</ns:DMIIndberetterRolle>
+            </ns:DMIIndberetterOpretStruktur>
+            <ns:Kunde>
+                <ns:KundeNummer>0505763661</ns:KundeNummer>
+                <ns:KundeType>CPR-Person</ns:KundeType>
+            </ns:Kunde>
+        </ns:DMIFordringOverblikHent_I>
+    </soapenv:Body>
+</soapenv:Envelope>

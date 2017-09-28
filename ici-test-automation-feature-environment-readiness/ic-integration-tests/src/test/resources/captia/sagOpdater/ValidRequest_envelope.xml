@@ -1,0 +1,228 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:SagOpdater_I revision="gero et">
+            <ns:Kontekst>
+            </ns:Kontekst>
+            <ns:Sag>
+                <ns:SagIdentifikationValg>
+                    <ns:EnhedsagIdentifikation>
+                        <ns:SagNummer>sonoras imperio</ns:SagNummer>
+                    </ns:EnhedsagIdentifikation>
+                    <ns:DossiersagIdentifikationValg>
+                        <ns:Virksomhed>
+                            <ns:VirksomhedSENummer>200</ns:VirksomhedSENummer>
+                        </ns:Virksomhed>
+                        <ns:Person>
+                            <ns:PersonCPRNummer>quae divum</ns:PersonCPRNummer>
+                        </ns:Person>
+                    </ns:DossiersagIdentifikationValg>
+                </ns:SagIdentifikationValg>
+                <ns:SagOplysninger>
+                    <ns:SagProfilValg>
+                        <ns:SagProfilNavn>verrantque per auras</ns:SagProfilNavn>
+                    </ns:SagProfilValg>
+                    <ns:SagTitel>
+                        <ns:Opdater>
+                            <ns:SagTitel>speluncis abdidit</ns:SagTitel>
+                        </ns:Opdater>
+                        <ns:SletMarkering>true</ns:SletMarkering>
+                    </ns:SagTitel>
+                    <ns:SagPlanlagtAfslutningDato>
+                        <ns:Opdater>
+                            <ns:SagPlanlagtAfslutningDato>2018-02-04+01:00</ns:SagPlanlagtAfslutningDato>
+                        </ns:Opdater>
+                        <ns:SletMarkering>true</ns:SletMarkering>
+                    </ns:SagPlanlagtAfslutningDato>
+                    <ns:SagAfsluttetDato>
+                        <ns:Opdater>
+                            <ns:SagAfsluttetDato>2005-09-12+02:00</ns:SagAfsluttetDato>
+                        </ns:Opdater>
+                        <ns:SletMarkering>false</ns:SletMarkering>
+                    </ns:SagAfsluttetDato>
+                    <ns:SagBemærkning>
+                        <ns:Tilføj>
+                            <ns:SagBemærkning>circum claustra</ns:SagBemærkning>
+                        </ns:Tilføj>
+                        <ns:Erstat>
+                            <ns:SagBemærkning>coniunx una</ns:SagBemærkning>
+                        </ns:Erstat>
+                        <ns:SletMarkering>false</ns:SletMarkering>
+                    </ns:SagBemærkning>
+                    <ns:SagPartValgListe>
+                        <ns:SagPart>
+                            <ns:Slet>
+                                <ns:PartRolleBetegnelse>claustra fr</ns:PartRolleBetegnelse>
+                                <ns:SagPartIDValg>
+                                    <ns:CPRIdentifikation>
+                                        <ns:PersonCPRNummer>imperio pr</ns:PersonCPRNummer>
+                                    </ns:CPRIdentifikation>
+                                </ns:SagPartIDValg>
+                            </ns:Slet>
+                            <ns:Opret>
+                                <ns:PartRolleBetegnelse>pectore fla</ns:PartRolleBetegnelse>
+                                <ns:SagPartIDValg>
+                                    <ns:PartAlternativID>
+                                        <ns:PartAlternativID>certo et</ns:PartAlternativID>
+                                        <ns:PartAlternativIDType>rates evert</ns:PartAlternativIDType>
+                                    </ns:PartAlternativID>
+                                </ns:SagPartIDValg>
+                            </ns:Opret>
+                        </ns:SagPart>
+                    </ns:SagPartValgListe>
+                    <ns:SagEmneordListe>
+                        <ns:SagEmneord>
+                            <ns:Slet>
+                                <ns:SagEmneord>volutans nimborum in</ns:SagEmneord>
+                            </ns:Slet>
+                            <ns:Opret>
+                                <ns:SagEmneord>faciat maria</ns:SagEmneord>
+                            </ns:Opret>
+                        </ns:SagEmneord>
+                        <ns:SagEmneord>
+                            <ns:Slet>
+                                <ns:SagEmneord>volutans nimborum in 2</ns:SagEmneord>
+                            </ns:Slet>
+                        </ns:SagEmneord>
+                    </ns:SagEmneordListe>
+                    <ns:SagErindringListe>
+                        <ns:SagErindring>
+                            <ns:Slet>
+                                <ns:IdentifikationValg>
+                                    <ns:OrganisatoriskEnhed>
+                                        <ns:OrganisatoriskEnhedNummer>et soror</ns:OrganisatoriskEnhedNummer>
+                                    </ns:OrganisatoriskEnhed>
+                                </ns:IdentifikationValg>
+                                <ns:SagErindringDato>2014-12-08</ns:SagErindringDato>
+                                <ns:SagErindringBeskrivelse>tenens mollitque animos</ns:SagErindringBeskrivelse>
+                            </ns:Slet>
+                            <ns:Opret>
+                                <ns:IdentifikationValg>
+                                    <ns:OrganisatoriskEnhed>
+                                        <ns:OrganisatoriskEnhedNummer>habenas ips</ns:OrganisatoriskEnhedNummer>
+                                    </ns:OrganisatoriskEnhed>
+                                </ns:IdentifikationValg>
+                                <ns:SagErindringDato>2012-01-08+01:00</ns:SagErindringDato>
+                                <ns:SagErindringBeskrivelse>in patriam</ns:SagErindringBeskrivelse>
+                            </ns:Opret>
+                        </ns:SagErindring>
+                        <ns:SagErindring>
+                            <ns:Slet>
+                                <ns:IdentifikationValg>
+                                    <ns:Sagsbehandler>
+                                        <ns:RessourceNummer>et quisquam</ns:RessourceNummer>
+                                    </ns:Sagsbehandler>
+                                </ns:IdentifikationValg>
+                                <ns:SagErindringDato>2014-12-08</ns:SagErindringDato>
+                                <ns:SagErindringBeskrivelse>tenens mollitque animos</ns:SagErindringBeskrivelse>
+                            </ns:Slet>
+                            <ns:Opret>
+                                <ns:IdentifikationValg>
+                                    <ns:Sagsbehandler>
+                                        <ns:RessourceNummer>montis insu</ns:RessourceNummer>
+                                    </ns:Sagsbehandler>
+                                </ns:IdentifikationValg>
+                                <ns:SagErindringDato>2012-01-08+01:00</ns:SagErindringDato>
+                                <ns:SagErindringBeskrivelse>in patriam</ns:SagErindringBeskrivelse>
+                            </ns:Opret>
+                        </ns:SagErindring>
+                    </ns:SagErindringListe>
+                    <ns:SagFriDatoListe>
+                        <ns:SagFriDato>
+                            <ns:Slet>
+                                <ns:SagFriDatoLedetekst>abdidit atr</ns:SagFriDatoLedetekst>
+                                <ns:SagFriDatoDato>2008-11-07+01:00</ns:SagFriDatoDato>
+                            </ns:Slet>
+                            <ns:Opret>
+                                <ns:SagFriDatoLedetekst>illum exspi</ns:SagFriDatoLedetekst>
+                                <ns:SagFriDatoDato>2019-06-11</ns:SagFriDatoDato>
+                            </ns:Opret>
+                        </ns:SagFriDato>
+                    </ns:SagFriDatoListe>
+                    <ns:SagFriOplysningListe>
+                        <ns:SagFriOplysning>
+                            <ns:Slet>
+                                <ns:SagFriOplysningLedetekst>mollitque a</ns:SagFriOplysningLedetekst>
+                                <ns:SagFriOplysningIndhold>montis insuper altos</ns:SagFriOplysningIndhold>
+                            </ns:Slet>
+                            <ns:Opret>
+                                <ns:SagFriOplysningLedetekst>molemque et</ns:SagFriOplysningLedetekst>
+                                <ns:SagFriOplysningIndhold>gero et</ns:SagFriOplysningIndhold>
+                            </ns:Opret>
+                        </ns:SagFriOplysning>
+                    </ns:SagFriOplysningListe>
+                    <ns:Sagsbehandler>
+                        <ns:Opdater>
+                            <ns:RessourceNummer>circum clau</ns:RessourceNummer>
+                        </ns:Opdater>
+                        <ns:SletMarkering>true</ns:SletMarkering>
+                    </ns:Sagsbehandler>
+                    <ns:SagBetaling>
+                        <ns:Opdater>
+                            <ns:IndbetalingID>flammato secum</ns:IndbetalingID>
+                            <ns:IndbetalingBeløb>1000.00</ns:IndbetalingBeløb>
+                            <ns:BetalingType>tempestatesque sonoras</ns:BetalingType>
+                            <ns:ValidBetaling>tenens mollitque</ns:ValidBetaling>
+                        </ns:Opdater>
+                        <ns:SletMarkering>true</ns:SletMarkering>
+                    </ns:SagBetaling>
+                    <ns:SagGenstand>
+                        <ns:EjendomListe>
+                            <ns:Ejendom>
+                                <ns:Slet>
+                                    <ns:EjendomNummer>100</ns:EjendomNummer>
+                                    <ns:MatrikelNummer>ac vinclis</ns:MatrikelNummer>
+                                    <ns:EjerlavNavn>acuto ast</ns:EjerlavNavn>
+                                </ns:Slet>
+                                <ns:Opret>
+                                    <ns:EjendomNummer>100</ns:EjendomNummer>
+                                    <ns:MatrikelNummer>et premere</ns:MatrikelNummer>
+                                    <ns:EjerlavNavn>dedit qui</ns:EjerlavNavn>
+                                </ns:Opret>
+                            </ns:Ejendom>
+                        </ns:EjendomListe>
+                        <ns:KøretøjListe>
+                            <ns:Køretøj>
+                                <ns:Slet>
+                                    <ns:KøretøjIdent>100</ns:KøretøjIdent>
+                                    <ns:RegistreringNummerNummer>profundum</ns:RegistreringNummerNummer>
+                                    <ns:KøretøjOplysningStelNummer>imposuit regemque</ns:KøretøjOplysningStelNummer>
+                                </ns:Slet>
+                                <ns:Opret>
+                                    <ns:KøretøjIdent>100</ns:KøretøjIdent>
+                                    <ns:RegistreringNummerNummer>magno cum</ns:RegistreringNummerNummer>
+                                    <ns:KøretøjOplysningStelNummer>iras ni faciat</ns:KøretøjOplysningStelNummer>
+                                </ns:Opret>
+                            </ns:Køretøj>
+                        </ns:KøretøjListe>
+                    </ns:SagGenstand>
+                    <ns:SagRelationListe>
+                        <ns:SagRelation>
+                            <ns:Slet>
+                                <ns:SagNummer>verrantque per</ns:SagNummer>
+                                <ns:SagForholdBeskrivelse>metuens mol</ns:SagForholdBeskrivelse>
+                            </ns:Slet>
+                            <ns:Opret>
+                                <ns:SagNummer>dare iussus habenas</ns:SagNummer>
+                                <ns:SagForholdBeskrivelse>tempestates</ns:SagForholdBeskrivelse>
+                            </ns:Opret>
+                        </ns:SagRelation>
+                    </ns:SagRelationListe>
+                    <ns:DokumentTilknytningListe>
+                        <ns:DokumentTilknytning>
+                            <ns:Slet>
+                                <ns:DokumentNummer>100</ns:DokumentNummer>
+                            </ns:Slet>
+                            <ns:Opret>
+                                <ns:DokumentNummer>100</ns:DokumentNummer>
+                                <ns:DokumentRolleBetegnelse>sceptra ten</ns:DokumentRolleBetegnelse>
+                                <ns:Aktering>false</ns:Aktering>
+                            </ns:Opret>
+                        </ns:DokumentTilknytning>
+                    </ns:DokumentTilknytningListe>
+                </ns:SagOplysninger>
+            </ns:Sag>
+        </ns:SagOpdater_I>
+    </soapenv:Body>
+</soapenv:Envelope>

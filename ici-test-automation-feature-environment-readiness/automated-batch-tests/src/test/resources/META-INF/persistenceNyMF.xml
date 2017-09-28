@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+
+    <persistence-unit name="test-jpa" transaction-type="RESOURCE_LOCAL">
+
+        <class>dk.rim.is.abt.nymf.entity.TransaktionHistorik</class>
+        <class>dk.rim.is.abt.nymf.entity.FordringIndberetHistorik</class>
+        <class>dk.rim.is.abt.nymf.entity.FordringsAktion</class>
+        <class>dk.rim.is.abt.nymf.entity.FordringsAktionState</class>
+        <class>dk.rim.is.abt.nymf.entity.FordringsAktionData</class>
+        <class>dk.rim.is.abt.nymf.entity.LeveranceEntity</class>
+        <class>dk.rim.is.abt.nymf.entity.LeveranceState</class>
+        <class>dk.rim.is.abt.nymf.entity.ModtagStatusOpdateringHistorik</class>
+        <class>dk.rim.is.abt.nymf.entity.KvitteringHentHistorik</class>
+        <class>dk.rim.is.abt.nymf.entity.Skyldner</class>
+        <class>dk.rim.is.abt.nymf.entity.Transaktion</class>
+        <class>dk.rim.is.abt.nymf.entity.UnderretningIdMapEntity</class>
+
+        <class>dk.rim.is.abt.nymf.entity.AktionIdMapEntity</class>
+        <class>dk.rim.is.abt.nymf.entity.LeveranceIdMapEntity</class>
+        <class>dk.rim.is.abt.nymf.entity.RoutingRule</class>
+        <class>dk.rim.is.abt.nymf.entity.UnderretSamlingHentHistorik</class>
+        <class>dk.rim.is.api.helpers.SequenceEntity</class>
+        <class>dk.rim.is.api.helpers.SequenceEntityAktionId</class>
+        <class>dk.rim.is.abt.nymf.entity.SeenLeverance</class>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    </persistence-unit>
+</persistence>

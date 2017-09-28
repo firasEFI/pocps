@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:DokumentMultiOpret_I revision="gero et" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+            <ns:Kontekst>
+            </ns:Kontekst>
+            <ns:DokumentListeOplysninger>
+                <ns:SagIdentifikationValg>
+                    <ns:EnhedsagIdentifikation>

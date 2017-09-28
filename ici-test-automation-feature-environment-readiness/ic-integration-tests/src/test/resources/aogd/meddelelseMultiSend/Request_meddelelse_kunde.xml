@@ -1,0 +1,21 @@
+<ns:Meddelelse xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+    <ns:MeddelelseIndhold>
+        <Content>Sample content: {randomString}</Content>
+    </ns:MeddelelseIndhold>
+    <ns:MeddelelseTypeNummer>123456789</ns:MeddelelseTypeNummer>
+    <ns:MeddelelseAfsenderReference>{randomInt}</ns:MeddelelseAfsenderReference>
+    <ns:KundeNummer>432176366{iterator}</ns:KundeNummer>
+    <ns:MeddelelseOprettetAfMedarbejder>w07467</ns:MeddelelseOprettetAfMedarbejder>
+    <ns:KanalTypeNummer>1</ns:KanalTypeNummer>
+    <ns:KanalAdresseStruktur>
+        <ns:AdresseValg>
+            <ns:EmailAdresseStruktur>
+                <ns:EmailAdresse>
+                    <ns:EmailAdresseEmail>SKATFKT@gmail.com</ns:EmailAdresseEmail>
+                </ns:EmailAdresse>
+            </ns:EmailAdresseStruktur>
+        </ns:AdresseValg>
+    </ns:KanalAdresseStruktur>
+    <ns:MeddelelseTypeSkalIKommunikationMappe>true</ns:MeddelelseTypeSkalIKommunikationMappe>
+    <ns:Filer/>
+</ns:Meddelelse>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="dk.rim.is.abt.dao.cisadm.CiPerEntity">
+        <table name="CI_PER" schema="CISADM" catalog=""/>
+        <attributes>
+            <id name="perId">
+                <column name="PER_ID" length="10"/>
+            </id>
+            <basic name="languageCd">
+                <column name="LANGUAGE_CD" length="3"/>
+            </basic>
+            <basic name="perOrBusFlg">
+                <column name="PER_OR_BUS_FLG" length="2"/>
+            </basic>
+            <basic name="lsSlFlg">
+                <column name="LS_SL_FLG" length="2"/>
+            </basic>
+            <basic name="lsSlDescr">
+                <column name="LS_SL_DESCR" length="254"/>
+            </basic>
+            <basic name="emailid">
+                <column name="EMAILID" length="254"/>
+            </basic>
+            <basic name="ovrdMailName1">
+                <column name="OVRD_MAIL_NAME1" length="254"/>
+            </basic>
+            <basic name="ovrdMailName2">
+                <column name="OVRD_MAIL_NAME2" length="254"/>
+            </basic>
+            <basic name="ovrdMailName3">
+                <column name="OVRD_MAIL_NAME3" length="254"/>
+            </basic>
+            <basic name="address1">
+                <column name="ADDRESS1" length="254"/>
+            </basic>
+            <basic name="address2">
+                <column name="ADDRESS2" length="254"/>
+            </basic>
+            <basic name="address3">
+                <column name="ADDRESS3" length="254"/>
+            </basic>
+            <basic name="address4">
+                <column name="ADDRESS4" length="254"/>
+            </basic>
+            <basic name="city">
+                <column name="CITY" length="90"/>
+            </basic>
+            <basic name="num1">
+                <column name="NUM1" length="6"/>
+            </basic>
+            <basic name="num2">
+                <column name="NUM2" length="4"/>
+            </basic>
+            <basic name="county">
+                <column name="COUNTY" length="90"/>
+            </basic>
+            <basic name="postal">
+                <column name="POSTAL" length="12"/>
+            </basic>
+            <basic name="houseType">
+                <column name="HOUSE_TYPE" length="2"/>
+            </basic>
+            <basic name="geoCode">
+                <column name="GEO_CODE" length="11"/>
+            </basic>
+            <basic name="inCityLimit">
+                <column name="IN_CITY_LIMIT" length="1"/>
+            </basic>
+            <basic name="state">
+                <column name="STATE" length="6"/>
+            </basic>
+            <basic name="country">
+                <column name="COUNTRY" length="3"/>
+            </basic>
+            <basic name="version">
+                <column name="VERSION" precision="5"/>
+            </basic>
+            <basic name="recvMktgInfoFlg">
+                <column name="RECV_MKTG_INFO_FLG" length="4"/>
+            </basic>
+            <basic name="webPasswd">
+                <column name="WEB_PASSWD" length="30"/>
+            </basic>
+            <basic name="webPwdHintFlg">
+                <column name="WEB_PWD_HINT_FLG" length="4"/>
+            </basic>
+            <basic name="webPasswdAns">
+                <column name="WEB_PASSWD_ANS" length="60"/>
+            </basic>
+            <basic name="c1PerDataArea">
+                <column name="C1_PER_DATA_AREA" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="perTypeCd">
+                <column name="PER_TYPE_CD" length="12"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

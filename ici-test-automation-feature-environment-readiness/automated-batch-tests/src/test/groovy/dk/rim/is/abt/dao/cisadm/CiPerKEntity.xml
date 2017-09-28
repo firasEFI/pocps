@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="dk.rim.is.abt.dao.cisadm.CiPerKEntity">
+        <table name="CI_PER_K" schema="CISADM" catalog=""/>
+        <id-class class="dk.rim.is.abt.dao.cisadm.CiPerKEntityPK"/>
+        <attributes>
+            <id name="perId">
+                <column name="PER_ID" length="10"/>
+            </id>
+            <id name="envId">
+                <column name="ENV_ID" precision="6"/>
+            </id>
+        </attributes>
+    </entity>
+</entity-mappings>

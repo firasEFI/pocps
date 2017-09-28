@@ -1,0 +1,12 @@
+<fase2:IndkomstOplysningKlassiskAbonnentHentAfslut_I xmlns:fase2="http://skat.dk/begrebsmodel/2008/01/01/" xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
+    <fase2:Kontekst>
+        <tsk:HovedOplysninger>
+            <tsk:TransaktionsID>IOSAB TestCase011 SKATXML</tsk:TransaktionsID>
+            <tsk:TransaktionsTid>2012-10-24T09:30:47</tsk:TransaktionsTid>
+        </tsk:HovedOplysninger>
+    </fase2:Kontekst>
+    <fase2:AbonnentBestillingIdentifikator>vWk9lMiF23B+xCFrQTpip4</fase2:AbonnentBestillingIdentifikator>
+    <fase2:AbonnentTypeKode>2166</fase2:AbonnentTypeKode>
+    <fase2:AbonnementTypeKode>3189</fase2:AbonnementTypeKode>
+    <fase2:AdgangFormålTypeKode>564</fase2:AdgangFormålTypeKode>
+</fase2:IndkomstOplysningKlassiskAbonnentHentAfslut_I>

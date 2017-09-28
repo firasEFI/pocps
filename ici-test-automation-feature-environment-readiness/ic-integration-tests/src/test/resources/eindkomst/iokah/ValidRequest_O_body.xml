@@ -1,0 +1,13 @@
+<ns:IndkomstOplysningKlassiskAbonnentHent_O_I xmlns:ns="http://skat.dk/begrebsmodel/2008/01/01/">
+   <ns:Kontekst>
+      <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
+         <tsk:TransaktionsID>16.08.2012 EFI/THJ</tsk:TransaktionsID>
+         <tsk:ServiceID>IndkomstOplysningKlassiskAbonnentHent_O_I</tsk:ServiceID>
+         <tsk:TransaktionsTid>2012-08-08T10:35:42.483+02:00</tsk:TransaktionsTid>
+      </tsk:HovedOplysninger>
+   </ns:Kontekst>
+   <ns:AbonnentBestillingIdentifikator>ar0OdFsu5zEg1W6J1a7aQ4</ns:AbonnentBestillingIdentifikator>
+   <ns:AbonnentTypeKode>8397</ns:AbonnentTypeKode>
+   <ns:AbonnementTypeKode>6251</ns:AbonnementTypeKode>
+   <ns:AdgangFormålTypeKode>642</ns:AdgangFormålTypeKode>
+</ns:IndkomstOplysningKlassiskAbonnentHent_O_I>

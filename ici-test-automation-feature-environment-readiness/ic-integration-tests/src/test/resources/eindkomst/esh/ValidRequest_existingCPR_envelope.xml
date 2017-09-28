@@ -1,0 +1,29 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <fase2:eSkattekortHent_I xmlns:fase2="http://skat.dk/begrebsmodel/2008/01/01/">
+            <fase2:Kontekst>
+            </fase2:Kontekst>
+            <fase2:eSkattekortBrugerVirksomhedSamling>
+                <fase2:eSkattekortBrugerVirksomhed>
+                    <fase2:VirksomhedSENummer>19552101</fase2:VirksomhedSENummer>
+                    <fase2:eSkattekortPersonBlanketStrukturSamling>
+                        <fase2:eSkattekortPersonBlanketStruktur>
+                            <fase2:eSkattekortPersonBlanketStruktur>
+                                <fase2:PersonCPRNummer>0505859979</fase2:PersonCPRNummer>
+                                <fase2:eSkattekortIndkomstÅr>2017</fase2:eSkattekortIndkomstÅr>
+                                <fase2:SøgeDatoFra>2017-01-01</fase2:SøgeDatoFra>
+                                <fase2:eSkattekortAlleMarkering>true</fase2:eSkattekortAlleMarkering>
+                                <fase2:BlanketStruktur>
+                                    <fase2:BlanketNummer>20000</fase2:BlanketNummer>
+                                    <!--fase2:BlanketFeltNummer>0</fase2:BlanketFeltNummer-->
+                                </fase2:BlanketStruktur>
+                                <fase2:eSkattekortTypeKode>1</fase2:eSkattekortTypeKode>
+                            </fase2:eSkattekortPersonBlanketStruktur>
+                        </fase2:eSkattekortPersonBlanketStruktur>
+                    </fase2:eSkattekortPersonBlanketStrukturSamling>
+                </fase2:eSkattekortBrugerVirksomhed>
+            </fase2:eSkattekortBrugerVirksomhedSamling>
+        </fase2:eSkattekortHent_I>
+    </soapenv:Body>
+</soapenv:Envelope>

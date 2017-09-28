@@ -1,0 +1,6 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/ip/security/xml/schemas/service/2011/06/09/" xmlns:ns1="http://skat.dk/ip/security/xml/schemas/service/2011/06/09/" >
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:getTopLevelProcessRoleGroupsInput>
+            <ns1:primaryID xsi:type="ns:SkatSystemParameterType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://skat.dk/ip/security/xml/schemas/2007/02/14/" xmlns:ns="http://skat.dk/ip/security/xml/schemas/service/2007/02/20/">
+                <ns:GUID>InddrivelsenSystemUser</ns:GUID>

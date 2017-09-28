@@ -1,0 +1,51 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+    <soap:Header/>
+    <soap:Body>
+        <MFFordringIndberet_I xmlns="http://skat.dk/begrebsmodel/2009/01/15/">
+            <Kontekst/>
+            <FordringhaverSystemIDStruktur>
+                <VirksomhedSENummer>62786515</VirksomhedSENummer>
+            </FordringhaverSystemIDStruktur>
+            <MFLeveranceID>1500368191801</MFLeveranceID>
+            <FordringAktionSamling>
+                <FordringAktion>
+                    <MFAktionKode>OPSKRIVNINGOMGJORTNEDSKRIVNINGREGULERING</MFAktionKode>
+                    <DMIFordringHaverID>1229</DMIFordringHaverID>
+                    <AktionValg>
+                        <MFOpskrivningOmgjortNedskrivningReguleringStruktur>
+                            <DMIFordringEFIFordringID>156164889156</DMIFordringEFIFordringID>
+                            <DMIFordringModtagelseDato>2017-04-25T10:52:23.571</DMIFordringModtagelseDato>
+                            <MFAktionID>CHANGE_MFAktionID</MFAktionID>
+                            <FordringOpskrivningVirkningFra>2017-04-25</FordringOpskrivningVirkningFra>
+                            <MFAktionIDRef>98765</MFAktionIDRef>
+                            <OpskrivningÅrsagStruktur>
+                                <FordringOpskrivningÅrsagBegr>FordringOpskrivning</FordringOpskrivningÅrsagBegr>
+                            </OpskrivningÅrsagStruktur>
+                            <SagsbemærkningSamling>
+                                <MFNoteStruktur>
+                                    <MFNoteTekst>Note tekst.</MFNoteTekst>
+                                </MFNoteStruktur>
+                            </SagsbemærkningSamling>
+                            <DokumentSamling>
+                                <MFDokumentStruktur>
+                                    <DPDokumentArt>ANDET</DPDokumentArt>
+                                    <DokumentFormatValg>
+                                        <DokumentFil>
+                                            <DokumentFilType>dokumentFilType</DokumentFilType>
+                                            <DokumentFilIndhold>dokumentFilIndhold</DokumentFilIndhold>
+                                        </DokumentFil>
+                                    </DokumentFormatValg>
+                                </MFDokumentStruktur>
+                            </DokumentSamling>
+                            <HoeringJournalNummer>12345</HoeringJournalNummer>
+                            <OpskrivningBeløbStruktur>
+                                <ValutaKode>DKK</ValutaKode>
+                                <FordringOpskrivningBeløb>800</FordringOpskrivningBeløb>
+                            </OpskrivningBeløbStruktur>
+                        </MFOpskrivningOmgjortNedskrivningReguleringStruktur>
+                    </AktionValg>
+                </FordringAktion>
+            </FordringAktionSamling>
+        </MFFordringIndberet_I>
+    </soap:Body>
+</soap:Envelope>

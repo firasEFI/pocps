@@ -1,0 +1,7 @@
+# Selenium smoketests selection
+# [TP] {{var gebconf=geb:/gebconfig}}
+
+selenium.baseurl={{${gebconf}/baseurl}}
+selenium.username={{${gebconf}/username}}
+selenium.password={{${gebconf}/password}}
+selenium.loginurl={{${gebconf}/loginurl}}

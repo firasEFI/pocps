@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="dk.rim.is.abt.dao.cisadm.CiPerNameEntity">
+        <table name="CI_PER_NAME" schema="CISADM" catalog=""/>
+        <id-class class="dk.rim.is.abt.dao.cisadm.CiPerNameEntityPK"/>
+        <attributes>
+            <id name="perId">
+                <column name="PER_ID" length="10"/>
+            </id>
+            <id name="seqNum">
+                <column name="SEQ_NUM" precision="3"/>
+            </id>
+            <basic name="entityName">
+                <column name="ENTITY_NAME" length="254"/>
+            </basic>
+            <basic name="nameTypeFlg">
+                <column name="NAME_TYPE_FLG" length="4"/>
+            </basic>
+            <basic name="version">
+                <column name="VERSION" precision="5"/>
+            </basic>
+            <basic name="primNameSw">
+                <column name="PRIM_NAME_SW" length="1"/>
+            </basic>
+            <basic name="entityNameUpr">
+                <column name="ENTITY_NAME_UPR" length="254"/>
+            </basic>
+            <basic name="c1FirstName">
+                <column name="C1_FIRST_NAME" nullable="false" length="50"/>
+            </basic>
+            <basic name="middleName">
+                <column name="MIDDLE_NAME" nullable="false" length="50"/>
+            </basic>
+            <basic name="c1LastName">
+                <column name="C1_LAST_NAME" nullable="false" length="50"/>
+            </basic>
+            <basic name="namePrefixFlg">
+                <column name="NAME_PREFIX_FLG" nullable="false" length="4"/>
+            </basic>
+            <basic name="nameSuffix">
+                <column name="NAME_SUFFIX" nullable="false" length="50"/>
+            </basic>
+            <basic name="c1FirstNameUpr">
+                <column name="C1_FIRST_NAME_UPR" nullable="false" length="50"/>
+            </basic>
+            <basic name="c1LastNameUpr">
+                <column name="C1_LAST_NAME_UPR" nullable="false" length="50"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

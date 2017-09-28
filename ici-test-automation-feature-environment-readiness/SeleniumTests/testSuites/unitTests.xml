@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test automisation unit tests" parallel="none">
+    
+    <test name="Unit tests">
+    <groups>
+        <run>
+            <include name="unit" />
+            <exclude name="excluded" />
+        </run>
+    </groups>
+    
+        <packages>
+            <package name="findus_controllers"/>
+            <package name="findus_pageobjects.synchronization"/>
+        </packages>
+        
+         <classes>
+            <class name="findus_pageobjects.BasePageTest"/>
+            <class name="findus_pageobjects.UtilsTests"/>
+            <class name="findus_pageobjects.GenericInstantiatorTests"/>
+        </classes>
+    </test>
+</suite>

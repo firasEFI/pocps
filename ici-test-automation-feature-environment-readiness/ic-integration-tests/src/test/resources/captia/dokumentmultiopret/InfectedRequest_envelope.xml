@@ -1,0 +1,108 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:DokumentMultiOpret_I revision="gero et">
+            <ns:Kontekst>
+            </ns:Kontekst>
+            <ns:DokumentListeOplysninger>
+                <ns:SagIdentifikationValg>
+                    <ns:EnhedsagIdentifikation>
+                        <ns:SagNummer>12-123456</ns:SagNummer>
+                    </ns:EnhedsagIdentifikation>
+                </ns:SagIdentifikationValg>
+                <ns:DokumentListe>
+                    <ns:Dokument>
+                        <ns:DokumentProfilValg>
+                            <ns:DokumentProfilNavn>verrantque per auras</ns:DokumentProfilNavn>
+                            <ns:DokumentProfilOplysninger>
+                                <ns:DokumentGruppe>per aura</ns:DokumentGruppe>
+                                <ns:DokumentType>circum c</ns:DokumentType>
+                                <ns:DokumentTilstand>nimborum</ns:DokumentTilstand>
+                            </ns:DokumentProfilOplysninger>
+                        </ns:DokumentProfilValg>
+                        <ns:DokumentIndex>100</ns:DokumentIndex>
+                        <ns:DokumentTitel>foedere certo</ns:DokumentTitel>
+                        <ns:DokumentFilIndhold>WDVPIVAlQEFQWzRcUFpYNTQoUF4pN0NDKTd9JEVJQ0FSLVNUQU5EQVJELUFOVElWSVJVUy1URVNULUZJTEUhJEgrSCo=</ns:DokumentFilIndhold>
+                        <ns:DokumentFilType>pdf</ns:DokumentFilType>
+                        <ns:DokumentFilEncoding>et carcere</ns:DokumentFilEncoding>
+                        <ns:DokumentOprindelse>iovis ra</ns:DokumentOprindelse>
+                        <ns:Aktering>true</ns:Aktering>
+                        <ns:DokumentUUID>49705142-cb3f-4428-b507-c0235fc744be</ns:DokumentUUID>
+                        <ns:DokumentIndblik>nubibus ignem disiecitque</ns:DokumentIndblik>
+                        <ns:DokumentBemærkning>ac vinclis et</ns:DokumentBemærkning>
+                        <ns:DokumentSvarfristDato>2005-09-12+02:00</ns:DokumentSvarfristDato>
+                        <ns:DokumentBrevDato>2006-11-29</ns:DokumentBrevDato>
+                        <ns:Sagsbehandler>
+                            <ns:RessourceNummer>coniunx una</ns:RessourceNummer>
+                        </ns:Sagsbehandler>
+                        <ns:OrganisatoriskEnhedNiveauEt>
+                            <ns:OrganisatoriskEnhedNummer>arce sceptr</ns:OrganisatoriskEnhedNummer>
+                        </ns:OrganisatoriskEnhedNiveauEt>
+                        <ns:OrganisatoriskEnhedNiveauTo>
+                            <ns:OrganisatoriskEnhedNummer>circum clau</ns:OrganisatoriskEnhedNummer>
+                        </ns:OrganisatoriskEnhedNiveauTo>
+                        <ns:OrganisatoriskEnhedNiveauTre>
+                            <ns:OrganisatoriskEnhedNummer>certo et pr</ns:OrganisatoriskEnhedNummer>
+                        </ns:OrganisatoriskEnhedNiveauTre>
+                        <ns:DokumentPartListe>
+                            <ns:DokumentPart>
+                                <ns:PartRolleBetegnelse>et montis</ns:PartRolleBetegnelse>
+                                <ns:PartPåSagRolleBetegnelse>feta furent</ns:PartPåSagRolleBetegnelse>
+                                <ns:DokumentPartIDValg>
+                                    <ns:CPRIdentifikation>
+                                        <ns:PersonCPRNummer>sed pater</ns:PersonCPRNummer>
+                                    </ns:CPRIdentifikation>
+                                    <ns:SEIdentifikation>
+                                        <ns:VirksomhedSENummer>100</ns:VirksomhedSENummer>
+                                    </ns:SEIdentifikation>
+                                    <ns:CVRIdentifikation>
+                                        <ns:VirksomhedCVRNummer>talia fl</ns:VirksomhedCVRNummer>
+                                    </ns:CVRIdentifikation>
+                                    <ns:PartAlternativID>
+                                        <ns:PartAlternativID>austris aeoliam</ns:PartAlternativID>
+                                        <ns:PartAlternativIDType>sciret dare</ns:PartAlternativIDType>
+                                    </ns:PartAlternativID>
+                                </ns:DokumentPartIDValg>
+                            </ns:DokumentPart>
+                        </ns:DokumentPartListe>
+                        <ns:DokumentHenvisningListe>
+                            <ns:DokumentHenvisning>
+                                <ns:IdentifikationValg>
+                                    <ns:DokumentNummer>100</ns:DokumentNummer>
+                                    <ns:DokumentUUID>dare iussus</ns:DokumentUUID>
+                                </ns:IdentifikationValg>
+                                <ns:DokumentRolleBetegnelse>bella gero</ns:DokumentRolleBetegnelse>
+                            </ns:DokumentHenvisning>
+                        </ns:DokumentHenvisningListe>
+                        <ns:DokumentErindringListe>
+                            <ns:DokumentErindring>
+                                <ns:IdentifikationValg>
+                                    <ns:Sagsbehandler>
+                                        <ns:RessourceNummer>dedit qui f</ns:RessourceNummer>
+                                    </ns:Sagsbehandler>
+                                    <ns:OrganisatoriskEnhed>
+                                        <ns:OrganisatoriskEnhedNummer>magno cum</ns:OrganisatoriskEnhedNummer>
+                                    </ns:OrganisatoriskEnhed>
+                                </ns:IdentifikationValg>
+                                <ns:DokumentErindringDato>2018-01-21+01:00</ns:DokumentErindringDato>
+                                <ns:DokumentErindringBeskrivelse>annos bella gero</ns:DokumentErindringBeskrivelse>
+                            </ns:DokumentErindring>
+                        </ns:DokumentErindringListe>
+                        <ns:DokumentFriDatoListe>
+                            <ns:DokumentFriDato>
+                                <ns:DokumentFriDatoLedetekst>ventos temp</ns:DokumentFriDatoLedetekst>
+                                <ns:DokumentFriDatoDato>2016-10-07+02:00</ns:DokumentFriDatoDato>
+                            </ns:DokumentFriDato>
+                        </ns:DokumentFriDatoListe>
+                        <ns:DokumentFriOplysningListe>
+                            <ns:DokumentFriOplysning>
+                                <ns:DokumentFriOplysningLedetekst>habenas ips</ns:DokumentFriOplysningLedetekst>
+                                <ns:DokumentFriOplysningIndhold>mollitque animos</ns:DokumentFriOplysningIndhold>
+                            </ns:DokumentFriOplysning>
+                        </ns:DokumentFriOplysningListe>
+                    </ns:Dokument>
+                </ns:DokumentListe>
+            </ns:DokumentListeOplysninger>
+        </ns:DokumentMultiOpret_I>
+    </soapenv:Body>
+</soapenv:Envelope>

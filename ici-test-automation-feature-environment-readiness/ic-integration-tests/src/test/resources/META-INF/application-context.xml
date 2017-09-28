@@ -1,0 +1,53 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	  http://www.springframework.org/schema/beans/spring-beans-4.3.xsd http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="dk.rim.is.ic.inttests"/>
+
+    <bean id="entityManagerFactory"
+          class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+
+        <property name="persistenceXmlLocation" value="META-INF/persistence.xml" />
+
+        <property name="persistenceUnitName" value="test-jpa" />
+        <property name="jpaVendorAdapter">
+            <bean
+                    class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+            </bean>
+        </property>
+    </bean>
+
+    <!--LOCAL-->
+    <bean id="dataSource" class="oracle.jdbc.pool.OracleDataSource" destroy-method="close">
+        <property name="URL" value="jdbc:oracle:thin:@127.0.0.1:1521:ICIVM1D" />
+        <property name="user" value="BATCH" />
+        <property name="password" value="batch" />
+    </bean>
+
+    <!--DEV - JENKINS-->
+    <!--<bean id="dataSource" class="oracle.jdbc.pool.OracleDataSource" destroy-method="close">-->
+        <!--<property name="URL" value="jdbc:oracle:thin:@10.215.49.10:1521:ICIA1D" />-->
+        <!--<property name="user" value="BATCH" />-->
+        <!--<property name="password" value="netcompany-123" />-->
+    <!--</bean>-->
+
+    <!--DEV - LOCAL-->
+    <!--<bean id="dataSource" class="oracle.jdbc.pool.OracleDataSource" destroy-method="close">
+        <property name="URL" value="jdbc:oracle:thin:@127.215.49.10:1521:ICIA1D" />
+        <property name="user" value="BATCH" />
+        <property name="password" value="netcompany-123" />
+    </bean>-->
+
+    <!--SIT-->
+    <!--<bean id="dataSource" class="oracle.jdbc.pool.OracleDataSource" destroy-method="close">-->
+        <!--<property name="URL" value="jdbc:oracle:thin:@127.215.53.10:1521:ICID1S" />-->
+        <!--<property name="user" value="BATCH" />-->
+        <!--<property name="password" value="netcompany-123" />-->
+    <!--</bean>-->
+
+</beans>

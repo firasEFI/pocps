@@ -1,0 +1,130 @@
+deltaspike_ordinal=250
+#---------------- GENERAL SUITE CONFIGURATION --------------------
+csrp.suite.mappingport={systems:/systems/system[@name='csrp-mock']/ports/port[@name='http']/number}
+aogd.suite.mappingport={systems:/systems/system[@name='aogd']/ports/port[@name='http']/number}
+aogdKladde.suite.mappingport={systems:/systems/system[@name='aogd-kladde']/ports/port[@name='http']/number}
+psrm.suite.mappingport={systems:/systems/system[@name='psrm-ic-mock']/ports/port[@name='soap']/number}
+captia.suite.mappingport={systems:/systems/system[@name='captia']/ports/port[@name='http']/number}
+dcs.suite.mappingport={systems:/systems/system[@name='dcs-direct']/ports/port[@name='http']/number}
+nemKonto.suite.mappingport={systems:/systems/system[@name='nemkonto']/ports/port[@name='jms']/number}
+sap38.suite.mappingport={systems:/systems/system[@name='sap38']/ports/port[@name='http']/number}
+dmi.suite.mappingport={systems:/systems/system[@name='dmi']/ports/port[@name='http']/number}
+nets.suite.mappingport={systems:/systems/system[@name='ftpsgw']/ports/port[@name='http']/number}
+exmf.suite.mappingport={systems:/systems/system[@name='exmf']/ports/port[@name='http']/number}
+clamav.suite.mappingport={systems:/systems/system[@name='clamav-service']/ports/port[@name='http']/number}
+lettergeneration.suite.mappingport={systems:/systems/system[@name='lettergeneration']/port[@name='http']/number}
+es.suite.mappingport={systems:/systems/system[@name='es']/ports/port[@name='http']/number}
+eindkomst.suite.mappingport={systems:/systems/system[@name='eindkomst']/ports/port[@name='http']/number}
+sap38.suite.mappingport={systems:/systems/system[@name='sap38']/ports/port[@name='http']/number}
+slut.suite.mappingport={systems:/systems/system[@name='slut']/ports/port[@name='http']/number}
+timesimulation.suite.enabled={systems:/systems/system[@name='timesimulation']/properties/prop[@name='enabled']}
+
+databanken.suite=MockTestSuite
+
+mappingport.default=MockTestSuite
+mappingport.3310=LiveTestSuite
+mappingport.80=LiveTestSuite
+mappingport.1430=LiveTestSuite
+mappingport.7013=LiveTestSuite
+mappingport.6370=LiveTestSuite
+mappingport.6008=LiveTestSuite
+mappingport.8090=LiveTestSuite
+mappingport.7113=LiveTestSuite
+
+#---------------- INTEGRATION BATCH CONFIGURATION ----------------
+batch.db.host={infrastructure:/infrastructure/servers/server[roles/role[name='Database']]/internalIP}
+batch.db.port={infrastructure:/infrastructure/servers/server[roles/role[name='Database']]/roles/role[name='Database']/port}
+batch.db.sid={infrastructure:/infrastructure/servers/server[roles/role[name='Database']]/roles/role[name='Database']/SID}
+batch.db.user={users:/users/user[usercontext='Batch']/username}
+batch.db.password={users:/users/user[usercontext='Batch']/password}
+batch.rest.port=7001
+batch.endpoint.path=/integration-batch/rest
+batch.control.path=/batchcontrol/start
+batch.rest.host={infrastructure:/infrastructure/servers/server[roles/role[name='Batch']]/internalIP}
+
+#---------------- FTP MOCK CONFIGURATION ----------------
+ftp.host=localhost
+ftp.port=10021
+
+#---------------- INTEGRATION COMPONENT CONFIGURATION ----------------
+ic.host={infrastructure:/infrastructure/servers/server[roles/role/name='Integration']/internalIP}
+ic.internal.host={systems:/systems/system[@name='integration-component-internal']/hostnames/skat-network}
+ic.external.host={systems:/systems/system[@name='integration-component-external']/hostnames/skat-network}
+ic.rest.external.port={systems:/systems/system[@name='integration-component-external']/ports/port[@name='rest']/number}
+ic.rest.internal.port={systems:/systems/system[@name='integration-component-internal']/ports/port[@name='rest']/number}
+
+ic.soap.internal.protocol={systems:/systems/system[@name='integration-component-internal']/ports/port[@name='soap-internal']/protocol}
+ic.soap.external.protocol={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap']/protocol}
+ic.soap.internal.port={systems:/systems/system[@name='integration-component-internal']/ports/port[@name='soap-internal']/number}
+ic.soap.external.port={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap']/number}
+ic.soap.external.internalport={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/number}
+
+ic.csrp.deleteFile.path={systems:/systems/system[@name='integration-component-external']/ports/port[@name='rest']/services/service[@name='csrp.deleteFile']}
+ic.csrp.downloadFile.path={systems:/systems/system[@name='integration-component-external']/ports/port[@name='rest']/services/service[@name='csrp.downloadFile']}
+ic.csrp.personFileReady.path=csrp/downloadFile
+ic.csrp.psmh.path={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='csrp.psmh']}
+ic.aogd.meddelelseMultiSend.path={systems:/systems/system[@name='integration-component-internal']/ports/port[@name='soap-internal']/services/service[@name='aogd.mms']}
+ic.aogd.meddelelseMultiSendEkspres.path={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='aogd.mmseKladde']}
+ic.aogd.meddelelseStatusMultiHentKladde.path={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='aogd.meddelelseStatusMultiHentKladde']}
+ic.aogd.formateretMeddelelseIndholdMultiHent.path={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='aogd.fmimh']}
+ic.aogd.formateretMeddelelseIndholdMultiHentKladde.path={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='aogd.fmimhKladde']}
+ic.aogd.requestFormattedMessageDownload.path=AogD/requestFormattedMessageDownload
+
+ic.psrm.retrieveAllCpr.path={systems:/systems/system[@name='integration-component-internal']/ports/port[@name='rest']/services/service[@name='psrm.retrieveAllCpr']}
+ic.psrm.statusUpdate.path={systems:/systems/system[@name='integration-component-internal']/ports/port[@name='rest']/services/service[@name='psrm.statusUpdate']}
+ic.psrm.documentInfo.path={systems:/systems/system[@name='integration-component-internal']/ports/port[@name='rest']/services/service[@name='psrm.documentInfo']}
+ic.psrm.documentUpdate.path={systems:/systems/system[@name='integration-component-internal']/ports/port[@name='rest']/services/service[@name='psrm.documentUpdate']}
+ic.psrm.receiveClaim.path={systems:/systems/system[@name='integration-component-internal']/ports/port[@name='soap-internal']/services/service[@name='psrm.receiveClaim']}
+ic.psrm.receiveHoering.path={systems:/systems/system[@name='integration-component-internal']/ports/port[@name='soap-internal']/services/service[@name='psrm.receiveHoering']}
+ic.psrm.underretSamling.path={systems:/systems/system[@name='integration-component-internal']/ports/port[@name='soap-internal']/services/service[@name='psrm.underretSamling']}
+
+#-------- Captia --------
+# Username and password for accessing Captia web services (BASIC authentication is used).
+ic.captia.username={users:/users/user[usercontext='Captia']/username}
+ic.captia.password={users:/users/user[usercontext='Captia']/password}
+# Captia SOAP serivces exposed under different URL paths (generally, these should not change across environments)
+ic.captia.dokumentopdater.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='captia.dokumentopdater']}
+ic.captia.dokumenthent.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='captia.dokumenthent']}
+ic.captia.dokumentmultiopret.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='captia.dokumentmultiopret']}
+ic.captia.dokumentmultiopretbeskedhvisvirus.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='captia.dokumentmultiopretbeskedhvisvirus']}
+ic.captia.sagopdater.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='captia.sagopdater']}
+ic.captia.sagopret.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='captia.sagopret']}
+ic.captia.dpdokumentopret.servicePath=Captia/DPDokumentOpretService
+
+#-------- DCS --------
+ic.dcs.ssosh.servicePath=DCS/SingleSignOnSessionHentService
+ic.dcs.gei.servicePath=DCS/GetEntityInformationService
+ic.dcs.tnprgsh.servicePath=DCS/TopNiveauProcesRolleGruppeSamlingHentService
+ic.dcs.skatGuid={users:/users/user[usercontext='IntegrationTestDCSUser']/username}
+
+#-------- ES --------
+ic.es.dmifoh.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap']/services/service[@name='es.dmiFordringOverblikHent']}
+ic.es.dmifoh.username={users:/users/user[usercontext='ic-external-es']/username}
+ic.es.dmifoh.password={users:/users/user[usercontext='ic-external-es']/password}
+ic.es.vs.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='es.VirksomhedSoeg']}
+ic.es.vkosh.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='es.VirksomhedKontaktOplysningSamlingHentService']}
+ic.es.vbfkh.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='es.VirksomhedBrancheForholdKlassifikationHentService']}
+ic.es.vsosh.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='es.VirksomhedStamOplysningSamlingHentService']}
+ic.es.evrh.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='es.EjerVirksomhedRelationHentService']}
+ic.es.cnsnrh.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='es.CVRNummerSENummerRelationHentService']}
+ic.es.vaelrsh.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='es.VirksomhedAlleEjerLederRelationSamlingHentService']}
+
+#-------- EINDKOMST --------
+ic.eindkomst-i.esh.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='eindkomst-i.esh']}
+ic.eindkomst.iosh.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='eindkomst.iosh']}
+ic.eindkomst.iosab.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='eindkomst.iosab']}
+ic.eindkomst-i.lia.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='eindkomst-i.lia']}
+
+#-------- Nets --------
+ic.nets.indbtls.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap']/services/service[@name='nets.indbtls']}
+ic.nets.indbtlm.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap']/services/service[@name='nets.indbtlm']}
+ic.nets.indism.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap']/services/service[@name='nets.indism']}
+
+#-------- SAP38 --------
+ic.sap38.finansKonto.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='sap38.finansKonto']}
+
+#------- SLUT ----------
+ic.slut.personaarsopgoerelsehent.path={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='slut.personaarsopgoerelsehent']}
+
+#-------- Letter Generation --------
+lettergeneration.servicePath={systems:/systems/system[@name='integration-component-external']/ports/port[@name='soap-internal']/services/service[@name='lettergeneration.generateletter']}

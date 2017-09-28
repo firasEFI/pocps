@@ -1,0 +1,6 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/xml/schemas/sikkerhed/2012/04/16/">
+    <soapenv:Header>
+    </soapenv:Header>
+    <soapenv:Body>
+    </soapenv:Body>
+</soapenv:Envelope>

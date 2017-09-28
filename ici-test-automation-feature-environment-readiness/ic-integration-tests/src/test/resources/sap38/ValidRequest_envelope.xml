@@ -1,0 +1,53 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/" xmlns:ns1="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:FinansKontoBilagOpret_I xmlns:ns0='http://skat.dk/begrebsmodel/2009/01/15/' xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+            <ns:Kontekst>
+                <ns1:HovedOplysninger xmlns:ns1='http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/'>
+                    <ns1:TransaktionsID>1C38F6570D5A4434E1000000931D6C19</ns1:TransaktionsID>
+                    <ns1:TransaktionsTid>2017-03-14T00:51:51</ns1:TransaktionsTid>
+                    <ns1:BrugerKode>SYS_BATCH</ns1:BrugerKode>
+                </ns1:HovedOplysninger>
+            </ns:Kontekst>
+            <ns:FinansKontoBilag>
+                <ns:FinansKontoBilagFirmaKode>ICI</ns:FinansKontoBilagFirmaKode>
+                <ns:FinansKontoBilagNummer>3000000000</ns:FinansKontoBilagNummer>
+                <ns:FinansKontoBilagRegnskabÅr>2017</ns:FinansKontoBilagRegnskabÅr>
+                <ns:FinansKontoBilagArt>AB</ns:FinansKontoBilagArt>
+                <ns:FinansKontoBilagDato>2017-03-14</ns:FinansKontoBilagDato>
+                <ns:FinansKontoBilagBogføringDato>2017-03-14</ns:FinansKontoBilagBogføringDato>
+                <ns:FinansKontoBilagRegnskabMåned>02</ns:FinansKontoBilagRegnskabMåned>
+                <ns:FinansKontoBilagOmregningDato>2017-03-14</ns:FinansKontoBilagOmregningDato>
+                <ns:FinansKontoBilagAfstemningNøgle>
+                    <ns:FinansKontoBilagAfstemningNøgleReference>ACL1610070</ns:FinansKontoBilagAfstemningNøgleReference>
+                    <ns:FinansKontoBilagAfstemningNøgleLøbeNummer>00-0000125</ns:FinansKontoBilagAfstemningNøgleLøbeNummer>
+                </ns:FinansKontoBilagAfstemningNøgle>
+                <ns:ValutaOplysningKode>DKK</ns:ValutaOplysningKode>
+                <ns:BilagPositionListe>
+                    <ns:BilagPosition>
+                        <ns:FinansKontoBilagPositionLinjeNummer>001</ns:FinansKontoBilagPositionLinjeNummer>
+                        <ns:FinansKontoBilagPositionBogføringNøgle>50</ns:FinansKontoBilagPositionBogføringNøgle>
+                        <ns:FinansKontoBilagPositionDebitKreditKode>H</ns:FinansKontoBilagPositionDebitKreditKode>
+                        <ns:FinansKontoBilagPositionInternValutaBeløb>100.00</ns:FinansKontoBilagPositionInternValutaBeløb>
+                        <ns:FinansKontoBilagPositionHovedbogBeløb>100.00</ns:FinansKontoBilagPositionHovedbogBeløb>
+                        <ns:ValutaOplysningKode>DKK</ns:ValutaOplysningKode>
+                        <ns:FinansKontoBilagPositionValørDato>2017-03-14</ns:FinansKontoBilagPositionValørDato>
+                        <ns:FinansKontoBilagPositionArtKonto>1000</ns:FinansKontoBilagPositionArtKonto>
+                        <ns:FinansKontoBilagPositionProfitCenter>1229000001</ns:FinansKontoBilagPositionProfitCenter>
+                    </ns:BilagPosition>
+                    <ns:BilagPosition>
+                        <ns:FinansKontoBilagPositionLinjeNummer>002</ns:FinansKontoBilagPositionLinjeNummer>
+                        <ns:FinansKontoBilagPositionBogføringNøgle>40</ns:FinansKontoBilagPositionBogføringNøgle>
+                        <ns:FinansKontoBilagPositionDebitKreditKode>S</ns:FinansKontoBilagPositionDebitKreditKode>
+                        <ns:FinansKontoBilagPositionInternValutaBeløb>100.00</ns:FinansKontoBilagPositionInternValutaBeløb>
+                        <ns:FinansKontoBilagPositionHovedbogBeløb>100.00</ns:FinansKontoBilagPositionHovedbogBeløb>
+                        <ns:ValutaOplysningKode>DKK</ns:ValutaOplysningKode>
+                        <ns:FinansKontoBilagPositionValørDato>2017-03-14</ns:FinansKontoBilagPositionValørDato>
+                        <ns:FinansKontoBilagPositionArtKonto>3636</ns:FinansKontoBilagPositionArtKonto>
+                        <ns:FinansKontoBilagPositionProfitCenter>1229000001</ns:FinansKontoBilagPositionProfitCenter>
+                    </ns:BilagPosition>
+                </ns:BilagPositionListe>
+            </ns:FinansKontoBilag>
+        </ns:FinansKontoBilagOpret_I>
+    </soapenv:Body>
+</soapenv:Envelope>

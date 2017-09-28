@@ -1,0 +1,23 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:MFUnderretSamlingHent_I revision="?">
+            <ns:Kontekst/>
+            <ns:FordringhaverSystemIDStruktur>
+                <ns:VirksomhedSENummer>12345678</ns:VirksomhedSENummer>
+            </ns:FordringhaverSystemIDStruktur>
+            <ns:FordringHaverSamling>
+                <ns:DMIFordringHaverID>1229</ns:DMIFordringHaverID>
+            </ns:FordringHaverSamling>
+            <ns:SøgeDatoFra>
+                <ns:MFUnderretningDatoTid>2015-01-01+01:00</ns:MFUnderretningDatoTid>
+            </ns:SøgeDatoFra>
+            <ns:UnderretNummerFra>
+                <ns:MFUnderretningNummer>12</ns:MFUnderretningNummer>
+            </ns:UnderretNummerFra>
+            <ns:UnderretNummerTil>
+                <ns:MFUnderretningNummer/>
+            </ns:UnderretNummerTil>
+        </ns:MFUnderretSamlingHent_I>
+    </soapenv:Body>
+</soapenv:Envelope>

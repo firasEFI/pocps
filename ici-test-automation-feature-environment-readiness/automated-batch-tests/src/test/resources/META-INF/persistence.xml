@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+
+    <persistence-unit name="test-jpa" transaction-type="RESOURCE_LOCAL">
+
+        <class>dk.rim.is.abt.dao.cisadm.IntegrationFileEntity</class>
+        <class>dk.rim.is.abt.dao.cisadm.IntegrationFileTypeEntity</class>
+        <class>dk.rim.is.abt.dao.batch.CorrectionOrderEntity</class>
+        <class>dk.rim.is.abt.dao.batch.BatchJobExecutionEntity</class>
+        <class>dk.rim.is.abt.dao.batch.BatchStepExecutionEntity</class>
+
+        <class>dk.rim.is.common.entity.brev.BrevEntity</class>
+        <class>dk.rim.is.common.entity.brev.GenereretBrevEntity</class>
+        <class>dk.rim.is.common.entity.brev.GenereretBrevPdfEntity</class>
+        <class>dk.rim.is.common.entity.DateStoreEntity</class>
+        <properties>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+
+    </persistence-unit>
+
+</persistence>

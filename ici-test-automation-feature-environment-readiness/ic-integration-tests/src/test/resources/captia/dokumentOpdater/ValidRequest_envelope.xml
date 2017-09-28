@@ -1,0 +1,128 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:DokumentOpdater_I revision="gero et">
+            <ns:Kontekst>
+            </ns:Kontekst>
+            <ns:Dokument>
+                <ns:DokumentIdentifikation>
+                    <ns:DokumentNummer>100</ns:DokumentNummer>
+                </ns:DokumentIdentifikation>
+                <ns:Aktering>true</ns:Aktering>
+                <ns:DokumentOplysninger>
+                    <ns:DokumentProfilValg>
+                        <ns:DokumentProfilNavn>aeoliam venit</ns:DokumentProfilNavn>
+                    </ns:DokumentProfilValg>
+                    <ns:DokumentTitel>
+                        <ns:Opdater>
+                            <ns:DokumentTitel>regemque dedit</ns:DokumentTitel>
+                        </ns:Opdater>
+                        <ns:SletMarkering>true</ns:SletMarkering>
+                    </ns:DokumentTitel>
+                    <ns:DokumentSagsbehandler>
+                        <ns:Opdater>
+                            <ns:RessourceNummer>foedere cer</ns:RessourceNummer>
+                        </ns:Opdater>
+                        <ns:SletMarkering>false</ns:SletMarkering>
+                    </ns:DokumentSagsbehandler>
+                    <ns:DokumentIdentifikation>
+                        <ns:Opdater>
+                            <ns:SagIdentifikationValg>
+                                <ns:EnhedsagIdentifikation>
+                                    <ns:SagNummer>sceptra tenens</ns:SagNummer>
+                                </ns:EnhedsagIdentifikation>
+                            </ns:SagIdentifikationValg>
+                        </ns:Opdater>
+                        <ns:SletMarkering>false</ns:SletMarkering>
+                    </ns:DokumentIdentifikation>
+                    <ns:DokumentOrganisatoriskEnhedNiveauEt>
+                        <ns:Opdater>
+                            <ns:OrganisatoriskEnhedNummer>speluncis a</ns:OrganisatoriskEnhedNummer>
+                        </ns:Opdater>
+                        <ns:SletMarkering>true</ns:SletMarkering>
+                    </ns:DokumentOrganisatoriskEnhedNiveauEt>
+                    <ns:DokumentOrganisatoriskEnhedNiveauTo>
+                        <ns:Opdater>
+                            <ns:OrganisatoriskEnhedNummer>nubibus ign</ns:OrganisatoriskEnhedNummer>
+                        </ns:Opdater>
+                        <ns:SletMarkering>false</ns:SletMarkering>
+                    </ns:DokumentOrganisatoriskEnhedNiveauTo>
+                    <ns:DokumentOrganisatoriskEnhedNiveauTre>
+                        <ns:Opdater>
+                            <ns:OrganisatoriskEnhedNummer>hoc metuens</ns:OrganisatoriskEnhedNummer>
+                        </ns:Opdater>
+                        <ns:SletMarkering>false</ns:SletMarkering>
+                    </ns:DokumentOrganisatoriskEnhedNiveauTre>
+                    <ns:Fil>
+                        <ns:Opdater>
+                            <ns:DokumentFilIndhold>testfilecontents</ns:DokumentFilIndhold>
+                            <ns:DokumentFilType>caelumque profundum</ns:DokumentFilType>
+                            <ns:DokumentFilEncoding>circum claustra</ns:DokumentFilEncoding>
+                        </ns:Opdater>
+                    </ns:Fil>
+                    <ns:DokumentOprindelse>coniunx</ns:DokumentOprindelse>
+                    <ns:DokumentUUID>
+                        <ns:Opdater>
+                            <ns:DokumentUUID>arce sceptra</ns:DokumentUUID>
+                        </ns:Opdater>
+                        <ns:SletMarkering>false</ns:SletMarkering>
+                    </ns:DokumentUUID>
+                    <ns:DokumentIndblik>
+                        <ns:Opdater>
+                            <ns:DokumentIndblik>imperio premit</ns:DokumentIndblik>
+                        </ns:Opdater>
+                        <ns:SletMarkering>false</ns:SletMarkering>
+                    </ns:DokumentIndblik>
+                    <ns:DokumentSvarfristDato></ns:DokumentSvarfristDato>
+                    <ns:DokumentBrevDato></ns:DokumentBrevDato>
+                    <ns:DokumentBemærkning>
+                        <ns:Tilføj>
+                            <ns:DokumentBemærkning>austris aeoliam</ns:DokumentBemærkning>
+                        </ns:Tilføj>
+                        <ns:Erstat>
+                            <ns:DokumentBemærkning>sciret dare</ns:DokumentBemærkning>
+                        </ns:Erstat>
+                        <ns:SletMarkering>false</ns:SletMarkering>
+                    </ns:DokumentBemærkning>
+                    <ns:DokumentPartListe>
+                        <ns:DokumentPart>
+                            <ns:Slet>
+                                <ns:PartRolleBetegnelse>rates evert</ns:PartRolleBetegnelse>
+                                <ns:PartPåSagRolleBetegnelse>volutans ni</ns:PartPåSagRolleBetegnelse>
+                                <ns:DokumentPartIDValg>
+                                    <ns:CPRIdentifikation>
+                                        <ns:PersonCPRNummer>faciat mar</ns:PersonCPRNummer>
+                                    </ns:CPRIdentifikation>
+                                </ns:DokumentPartIDValg>
+                            </ns:Slet>
+                            <ns:Opret>
+                                <ns:PartRolleBetegnelse>ventos temp</ns:PartRolleBetegnelse>
+                                <ns:PartPåSagRolleBetegnelse>regina iovi</ns:PartPåSagRolleBetegnelse>
+                                <ns:DokumentPartIDValg>
+                                    <ns:CPRIdentifikation>
+                                        <ns:PersonCPRNummer>rapidum ia</ns:PersonCPRNummer>
+                                    </ns:CPRIdentifikation>
+                                </ns:DokumentPartIDValg>
+                            </ns:Opret>
+                        </ns:DokumentPart>
+                    </ns:DokumentPartListe>
+                    <ns:DokumentHenvisningListe>
+                        <ns:DokumentHenvisning>
+                            <ns:Slet>
+                                <ns:DokumentNummer>100</ns:DokumentNummer>
+                                <ns:DokumentRolleBetegnelse>abdidit atr</ns:DokumentRolleBetegnelse>
+                            </ns:Slet>
+                            <ns:Opret>
+                                <ns:DokumentNummer>100</ns:DokumentNummer>
+                                <ns:DokumentRolleBetegnelse>coniunx una</ns:DokumentRolleBetegnelse>
+                            </ns:Opret>
+                        </ns:DokumentHenvisning>
+                    </ns:DokumentHenvisningListe>
+                    <ns:DokumentErindringListe></ns:DokumentErindringListe>
+                    <ns:DokumentFriDatoListe></ns:DokumentFriDatoListe>
+                    <ns:DokumentFriOplysningListe></ns:DokumentFriOplysningListe>
+                </ns:DokumentOplysninger>
+            </ns:Dokument>
+        </ns:DokumentOpdater_I>
+    </soapenv:Body>
+</soapenv:Envelope>

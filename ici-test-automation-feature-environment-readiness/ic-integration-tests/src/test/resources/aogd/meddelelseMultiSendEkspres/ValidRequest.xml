@@ -1,0 +1,334 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<ns:MeddelelseMultiSendEkspres_I>
+			<ns:Kontekst/>
+			<ns:FagsystemNavn>IND_T</ns:FagsystemNavn>
+			<ns:MeddelelseBatchID>${Properties#MeddelelseBatchID}</ns:MeddelelseBatchID>
+			<ns:Meddelelser>
+				<Meddelelse xmlns="http://skat.dk/begrebsmodel/2009/01/15/">
+					<MeddelelseIndhold>
+						<InddrivelseMeddelelseAfdragOrdningStruktur>
+							<InddrivelseForbladStruktur>
+								<InddrivelseIndtastningFelterStruktur>
+									<InddrivelseIndtastningFelterListe>
+										<InddrivelseIndtastningFelter>
+											<InddrivelseIndtastningFelterFritekstNummer>1</InddrivelseIndtastningFelterFritekstNummer>
+											<InddrivelseIndtastningFelterFritekstTekst/>
+										</InddrivelseIndtastningFelter>
+										<InddrivelseIndtastningFelter>
+											<InddrivelseIndtastningFelterFritekstNummer>2</InddrivelseIndtastningFelterFritekstNummer>
+											<InddrivelseIndtastningFelterFritekstTekst/>
+										</InddrivelseIndtastningFelter>
+									</InddrivelseIndtastningFelterListe>
+								</InddrivelseIndtastningFelterStruktur>
+								<AndenAktørNavn/>
+								<KanalAdresseStruktur>
+									<AdresseValg>
+										<AlternativAdresseStruktur>
+											<AlternativAdresse>
+												<AlternativAdresseFortløbendeNummer/>
+												<AlternativAdresseAnvendelseKode/>
+												<AlternativAdresseAdresseLinie1/>
+												<AlternativAdresseAdresseLinie2/>
+												<AlternativAdresseAdresseLinie3/>
+												<AlternativAdresseAdresseLinie4/>
+												<AlternativAdresseAdresseLinie5/>
+												<AlternativAdresseAdresseLinie6/>
+												<AlternativAdresseAdresseLinie7/>
+												<AlternativAdresseGyldigFra/>
+												<AlternativAdresseGyldigTil/>
+												<AdresseTypeKode/>
+												<AdresseTypeTekst/>
+												<AdresseTypeGyldigFra/>
+												<AdresseTypeGyldigTil/>
+												<LandKode/>
+												<LandNavn/>
+											</AlternativAdresse>
+										</AlternativAdresseStruktur>
+									</AdresseValg>
+								</KanalAdresseStruktur>
+							</InddrivelseForbladStruktur>
+							<InddrivelseFordringOpgørelseStruktur>
+								<InddrivelseFordringOpgørelseSumSamletBeløb>11356</InddrivelseFordringOpgørelseSumSamletBeløb>
+								<InddrivelseFordringOpgørelseDato>2017-03-28</InddrivelseFordringOpgørelseDato>
+								<InddrivelseSimuleretRenteStruktur>
+									<InddrivelseFordringOpgørelseSimuleretRenteDato>2017-03-28</InddrivelseFordringOpgørelseSimuleretRenteDato>
+									<InddrivelseFordringOpgørelseSamletSimuleretRenteBeløb>34561</InddrivelseFordringOpgørelseSamletSimuleretRenteBeløb>
+									<InddrivelseFordringOpgørelseSumSamletInklusivSimuleretRenteBeløb>123456</InddrivelseFordringOpgørelseSumSamletInklusivSimuleretRenteBeløb>
+								</InddrivelseSimuleretRenteStruktur>
+								<InddrivelseFordringshaverFordringerListe>
+									<InddrivelseFordringshaverFordringer>
+										<InddrivelseFordringshaverID>9af82cab-9b92-4c63-b8c9-767951e23295</InddrivelseFordringshaverID>
+										<PersonNavnNavn>DR</PersonNavnNavn>
+										<InddrivelseFordringListe>
+											<InddrivelseFordring>
+												<InddrivelseFordringNiveau1ID>1ec6585c-6528-4a64-8622-c6f395eadcd8</InddrivelseFordringNiveau1ID>
+												<InddrivelseFordringStruktur>
+													<InddrivelseFordringTypeTekst>Fordring type tekst</InddrivelseFordringTypeTekst>
+													<InddrivelseFordringPeriodeFraDato>2017-03-28</InddrivelseFordringPeriodeFraDato>
+													<InddrivelseFordringPeriodeTilDato>2017-03-28</InddrivelseFordringPeriodeTilDato>
+													<InddrivelseFordringStiftelseDato>2017-03-28</InddrivelseFordringStiftelseDato>
+													<InddrivelseFordringBeskrivelse>Du skylder mange penge</InddrivelseFordringBeskrivelse>
+													<InddrivelseFordringBeløb>3678</InddrivelseFordringBeløb>
+												</InddrivelseFordringStruktur>
+												<SumBeløbInklusiveRelateredeFordringer>
+													<InddrivelseFordringSumBeløb>5678</InddrivelseFordringSumBeløb>
+												</SumBeløbInklusiveRelateredeFordringer>
+												<InddrivelseRelateretFordringNiveau2Liste>
+													<InddrivelseRelateretFordringNiveau2>
+														<InddrivelseFordringNiveau2ID>34d167b3-8126-42c8-877f-615d563a344f</InddrivelseFordringNiveau2ID>
+														<InddrivelseRelateretFordringStruktur>
+															<InddrivelseRelateretFordringTypeTekst>Relateret fordring type tekst</InddrivelseRelateretFordringTypeTekst>
+															<InddrivelseRelateretFordringPeriodeFraDato>2017-03-28</InddrivelseRelateretFordringPeriodeFraDato>
+															<InddrivelseRelateretFordringPeriodeTilDato>2017-03-28</InddrivelseRelateretFordringPeriodeTilDato>
+															<InddrivelseRelateretFordringStiftelseDato>2017-03-28</InddrivelseRelateretFordringStiftelseDato>
+															<InddrivelseRelateretFordringBeskrivelse>Du skylder mange penge</InddrivelseRelateretFordringBeskrivelse>
+															<InddrivelseRelateretFordringBeløb>3678</InddrivelseRelateretFordringBeløb>
+														</InddrivelseRelateretFordringStruktur>
+														<InddrivelseRelateretFordringNiveau3Liste>
+															<InddrivelseRelateretFordringNiveau3>
+																<InddrivelseFordringNiveau3ID>dc33068f-bcc2-49cc-943f-aa55e909e5be</InddrivelseFordringNiveau3ID>
+																<InddrivelseRelateretFordringStruktur>
+																	<InddrivelseRelateretFordringTypeTekst>Relateret fordring type tekst</InddrivelseRelateretFordringTypeTekst>
+																	<InddrivelseRelateretFordringPeriodeFraDato>2017-03-28</InddrivelseRelateretFordringPeriodeFraDato>
+																	<InddrivelseRelateretFordringPeriodeTilDato>2017-03-28</InddrivelseRelateretFordringPeriodeTilDato>
+																	<InddrivelseRelateretFordringStiftelseDato>2017-03-28</InddrivelseRelateretFordringStiftelseDato>
+																	<InddrivelseRelateretFordringBeskrivelse>Du skylder mange penge</InddrivelseRelateretFordringBeskrivelse>
+																	<InddrivelseRelateretFordringBeløb>3678</InddrivelseRelateretFordringBeløb>
+																</InddrivelseRelateretFordringStruktur>
+															</InddrivelseRelateretFordringNiveau3>
+															<InddrivelseRelateretFordringNiveau3>
+																<InddrivelseFordringNiveau3ID>0251372a-365a-41de-ad29-8ae382dacdc4</InddrivelseFordringNiveau3ID>
+																<InddrivelseRelateretFordringStruktur>
+																	<InddrivelseRelateretFordringTypeTekst>Relateret fordring type tekst</InddrivelseRelateretFordringTypeTekst>
+																	<InddrivelseRelateretFordringPeriodeFraDato>2017-03-28</InddrivelseRelateretFordringPeriodeFraDato>
+																	<InddrivelseRelateretFordringPeriodeTilDato>2017-03-28</InddrivelseRelateretFordringPeriodeTilDato>
+																	<InddrivelseRelateretFordringStiftelseDato>2017-03-28</InddrivelseRelateretFordringStiftelseDato>
+																	<InddrivelseRelateretFordringBeskrivelse>Du skylder mange penge</InddrivelseRelateretFordringBeskrivelse>
+																	<InddrivelseRelateretFordringBeløb>3678</InddrivelseRelateretFordringBeløb>
+																</InddrivelseRelateretFordringStruktur>
+															</InddrivelseRelateretFordringNiveau3>
+														</InddrivelseRelateretFordringNiveau3Liste>
+													</InddrivelseRelateretFordringNiveau2>
+													<InddrivelseRelateretFordringNiveau2>
+														<InddrivelseFordringNiveau2ID>b4ab4e52-6c0d-4294-9a37-aef538b02aa7</InddrivelseFordringNiveau2ID>
+														<InddrivelseRelateretFordringStruktur>
+															<InddrivelseRelateretFordringTypeTekst>Relateret fordring type tekst</InddrivelseRelateretFordringTypeTekst>
+															<InddrivelseRelateretFordringPeriodeFraDato>2017-03-28</InddrivelseRelateretFordringPeriodeFraDato>
+															<InddrivelseRelateretFordringPeriodeTilDato>2017-03-28</InddrivelseRelateretFordringPeriodeTilDato>
+															<InddrivelseRelateretFordringStiftelseDato>2017-03-28</InddrivelseRelateretFordringStiftelseDato>
+															<InddrivelseRelateretFordringBeskrivelse>Du skylder mange penge</InddrivelseRelateretFordringBeskrivelse>
+															<InddrivelseRelateretFordringBeløb>3678</InddrivelseRelateretFordringBeløb>
+														</InddrivelseRelateretFordringStruktur>
+														<InddrivelseRelateretFordringNiveau3Liste>
+															<InddrivelseRelateretFordringNiveau3>
+																<InddrivelseFordringNiveau3ID>705a67dd-7ebd-487b-b8b6-bb373260489b</InddrivelseFordringNiveau3ID>
+																<InddrivelseRelateretFordringStruktur>
+																	<InddrivelseRelateretFordringTypeTekst>Relateret fordring type tekst</InddrivelseRelateretFordringTypeTekst>
+																	<InddrivelseRelateretFordringPeriodeFraDato>2017-03-28</InddrivelseRelateretFordringPeriodeFraDato>
+																	<InddrivelseRelateretFordringPeriodeTilDato>2017-03-28</InddrivelseRelateretFordringPeriodeTilDato>
+																	<InddrivelseRelateretFordringStiftelseDato>2017-03-28</InddrivelseRelateretFordringStiftelseDato>
+																	<InddrivelseRelateretFordringBeskrivelse>Du skylder mange penge</InddrivelseRelateretFordringBeskrivelse>
+																	<InddrivelseRelateretFordringBeløb>3678</InddrivelseRelateretFordringBeløb>
+																</InddrivelseRelateretFordringStruktur>
+															</InddrivelseRelateretFordringNiveau3>
+															<InddrivelseRelateretFordringNiveau3>
+																<InddrivelseFordringNiveau3ID>38fba356-be30-4081-89f6-9033da8c5f0f</InddrivelseFordringNiveau3ID>
+																<InddrivelseRelateretFordringStruktur>
+																	<InddrivelseRelateretFordringTypeTekst>Relateret fordring type tekst</InddrivelseRelateretFordringTypeTekst>
+																	<InddrivelseRelateretFordringPeriodeFraDato>2017-03-28</InddrivelseRelateretFordringPeriodeFraDato>
+																	<InddrivelseRelateretFordringPeriodeTilDato>2017-03-28</InddrivelseRelateretFordringPeriodeTilDato>
+																	<InddrivelseRelateretFordringStiftelseDato>2017-03-28</InddrivelseRelateretFordringStiftelseDato>
+																	<InddrivelseRelateretFordringBeskrivelse>Du skylder mange penge</InddrivelseRelateretFordringBeskrivelse>
+																	<InddrivelseRelateretFordringBeløb>3678</InddrivelseRelateretFordringBeløb>
+																</InddrivelseRelateretFordringStruktur>
+															</InddrivelseRelateretFordringNiveau3>
+														</InddrivelseRelateretFordringNiveau3Liste>
+													</InddrivelseRelateretFordringNiveau2>
+												</InddrivelseRelateretFordringNiveau2Liste>
+											</InddrivelseFordring>
+											<InddrivelseFordring>
+												<InddrivelseFordringNiveau1ID>ad14af9e-1d27-47d3-9e8c-c323651bd69b</InddrivelseFordringNiveau1ID>
+												<InddrivelseFordringStruktur>
+													<InddrivelseFordringTypeTekst>Fordring type tekst</InddrivelseFordringTypeTekst>
+													<InddrivelseFordringPeriodeFraDato>2017-03-28</InddrivelseFordringPeriodeFraDato>
+													<InddrivelseFordringPeriodeTilDato>2017-03-28</InddrivelseFordringPeriodeTilDato>
+													<InddrivelseFordringStiftelseDato>2017-03-28</InddrivelseFordringStiftelseDato>
+													<InddrivelseFordringBeskrivelse>Du skylder mange penge</InddrivelseFordringBeskrivelse>
+													<InddrivelseFordringBeløb>3678</InddrivelseFordringBeløb>
+												</InddrivelseFordringStruktur>
+												<SumBeløbInklusiveRelateredeFordringer>
+													<InddrivelseFordringSumBeløb>5678</InddrivelseFordringSumBeløb>
+												</SumBeløbInklusiveRelateredeFordringer>
+												<InddrivelseRelateretFordringNiveau2Liste>
+													<InddrivelseRelateretFordringNiveau2>
+														<InddrivelseFordringNiveau2ID>2a4709c3-d88d-49f4-9390-2064dabb0321</InddrivelseFordringNiveau2ID>
+														<InddrivelseRelateretFordringStruktur>
+															<InddrivelseRelateretFordringTypeTekst>Relateret fordring type tekst</InddrivelseRelateretFordringTypeTekst>
+															<InddrivelseRelateretFordringPeriodeFraDato>2017-03-28</InddrivelseRelateretFordringPeriodeFraDato>
+															<InddrivelseRelateretFordringPeriodeTilDato>2017-03-28</InddrivelseRelateretFordringPeriodeTilDato>
+															<InddrivelseRelateretFordringStiftelseDato>2017-03-28</InddrivelseRelateretFordringStiftelseDato>
+															<InddrivelseRelateretFordringBeskrivelse>Du skylder mange penge</InddrivelseRelateretFordringBeskrivelse>
+															<InddrivelseRelateretFordringBeløb>3678</InddrivelseRelateretFordringBeløb>
+														</InddrivelseRelateretFordringStruktur>
+														<InddrivelseRelateretFordringNiveau3Liste>
+															<InddrivelseRelateretFordringNiveau3>
+																<InddrivelseFordringNiveau3ID>397a918b-17b9-4ee1-aec9-253f9cf6e1b6</InddrivelseFordringNiveau3ID>
+																<InddrivelseRelateretFordringStruktur>
+																	<InddrivelseRelateretFordringTypeTekst>Relateret fordring type tekst</InddrivelseRelateretFordringTypeTekst>
+																	<InddrivelseRelateretFordringPeriodeFraDato>2017-03-28</InddrivelseRelateretFordringPeriodeFraDato>
+																	<InddrivelseRelateretFordringPeriodeTilDato>2017-03-28</InddrivelseRelateretFordringPeriodeTilDato>
+																	<InddrivelseRelateretFordringStiftelseDato>2017-03-28</InddrivelseRelateretFordringStiftelseDato>
+																	<InddrivelseRelateretFordringBeskrivelse>Du skylder mange penge</InddrivelseRelateretFordringBeskrivelse>
+																	<InddrivelseRelateretFordringBeløb>3678</InddrivelseRelateretFordringBeløb>
+																</InddrivelseRelateretFordringStruktur>
+															</InddrivelseRelateretFordringNiveau3>
+															<InddrivelseRelateretFordringNiveau3>
+																<InddrivelseFordringNiveau3ID>00432e9a-897c-476d-a466-98208131812d</InddrivelseFordringNiveau3ID>
+																<InddrivelseRelateretFordringStruktur>
+																	<InddrivelseRelateretFordringTypeTekst>Relateret fordring type tekst</InddrivelseRelateretFordringTypeTekst>
+																	<InddrivelseRelateretFordringPeriodeFraDato>2017-03-28</InddrivelseRelateretFordringPeriodeFraDato>
+																	<InddrivelseRelateretFordringPeriodeTilDato>2017-03-28</InddrivelseRelateretFordringPeriodeTilDato>
+																	<InddrivelseRelateretFordringStiftelseDato>2017-03-28</InddrivelseRelateretFordringStiftelseDato>
+																	<InddrivelseRelateretFordringBeskrivelse>Du skylder mange penge</InddrivelseRelateretFordringBeskrivelse>
+																	<InddrivelseRelateretFordringBeløb>3678</InddrivelseRelateretFordringBeløb>
+																</InddrivelseRelateretFordringStruktur>
+															</InddrivelseRelateretFordringNiveau3>
+														</InddrivelseRelateretFordringNiveau3Liste>
+													</InddrivelseRelateretFordringNiveau2>
+													<InddrivelseRelateretFordringNiveau2>
+														<InddrivelseFordringNiveau2ID>34c2b1b4-53c0-4122-9668-ee6ecba89fdf</InddrivelseFordringNiveau2ID>
+														<InddrivelseRelateretFordringStruktur>
+															<InddrivelseRelateretFordringTypeTekst>Relateret fordring type tekst</InddrivelseRelateretFordringTypeTekst>
+															<InddrivelseRelateretFordringPeriodeFraDato>2017-03-28</InddrivelseRelateretFordringPeriodeFraDato>
+															<InddrivelseRelateretFordringPeriodeTilDato>2017-03-28</InddrivelseRelateretFordringPeriodeTilDato>
+															<InddrivelseRelateretFordringStiftelseDato>2017-03-28</InddrivelseRelateretFordringStiftelseDato>
+															<InddrivelseRelateretFordringBeskrivelse>Du skylder mange penge</InddrivelseRelateretFordringBeskrivelse>
+															<InddrivelseRelateretFordringBeløb>3678</InddrivelseRelateretFordringBeløb>
+														</InddrivelseRelateretFordringStruktur>
+														<InddrivelseRelateretFordringNiveau3Liste>
+															<InddrivelseRelateretFordringNiveau3>
+																<InddrivelseFordringNiveau3ID>d80186eb-2232-4200-a610-fb4fa1f36094</InddrivelseFordringNiveau3ID>
+																<InddrivelseRelateretFordringStruktur>
+																	<InddrivelseRelateretFordringTypeTekst>Relateret fordring type tekst</InddrivelseRelateretFordringTypeTekst>
+																	<InddrivelseRelateretFordringPeriodeFraDato>2017-03-28</InddrivelseRelateretFordringPeriodeFraDato>
+																	<InddrivelseRelateretFordringPeriodeTilDato>2017-03-28</InddrivelseRelateretFordringPeriodeTilDato>
+																	<InddrivelseRelateretFordringStiftelseDato>2017-03-28</InddrivelseRelateretFordringStiftelseDato>
+																	<InddrivelseRelateretFordringBeskrivelse>Du skylder mange penge</InddrivelseRelateretFordringBeskrivelse>
+																	<InddrivelseRelateretFordringBeløb>3678</InddrivelseRelateretFordringBeløb>
+																</InddrivelseRelateretFordringStruktur>
+															</InddrivelseRelateretFordringNiveau3>
+															<InddrivelseRelateretFordringNiveau3>
+																<InddrivelseFordringNiveau3ID>0c2172e1-da32-4a04-a3dc-3968f97d460c</InddrivelseFordringNiveau3ID>
+																<InddrivelseRelateretFordringStruktur>
+																	<InddrivelseRelateretFordringTypeTekst>Relateret fordring type tekst</InddrivelseRelateretFordringTypeTekst>
+																	<InddrivelseRelateretFordringPeriodeFraDato>2017-03-28</InddrivelseRelateretFordringPeriodeFraDato>
+																	<InddrivelseRelateretFordringPeriodeTilDato>2017-03-28</InddrivelseRelateretFordringPeriodeTilDato>
+																	<InddrivelseRelateretFordringStiftelseDato>2017-03-28</InddrivelseRelateretFordringStiftelseDato>
+																	<InddrivelseRelateretFordringBeskrivelse>Du skylder mange penge</InddrivelseRelateretFordringBeskrivelse>
+																	<InddrivelseRelateretFordringBeløb>3678</InddrivelseRelateretFordringBeløb>
+																</InddrivelseRelateretFordringStruktur>
+															</InddrivelseRelateretFordringNiveau3>
+														</InddrivelseRelateretFordringNiveau3Liste>
+													</InddrivelseRelateretFordringNiveau2>
+												</InddrivelseRelateretFordringNiveau2Liste>
+											</InddrivelseFordring>
+										</InddrivelseFordringListe>
+									</InddrivelseFordringshaverFordringer>
+								</InddrivelseFordringshaverFordringerListe>
+							</InddrivelseFordringOpgørelseStruktur>
+							<InddrivelseIndtastningFelterStruktur>
+								<InddrivelseIndtastningFelterListe>
+									<InddrivelseIndtastningFelter>
+										<InddrivelseIndtastningFelterFritekstNummer>1</InddrivelseIndtastningFelterFritekstNummer>
+										<InddrivelseIndtastningFelterFritekstTekst/>
+									</InddrivelseIndtastningFelter>
+								</InddrivelseIndtastningFelterListe>
+							</InddrivelseIndtastningFelterStruktur>
+							<BetalingEvne>
+								<Forsørgerpligt>
+									<CivilstandForsørgerPligt/>
+								</Forsørgerpligt>
+								<InddrivelseBetalingEvneStruktur>
+									<BetalingEvneProcent/>
+									<BetalingEvneÅrligBeløb/>
+									<BetalingEvneMånedBeløb/>
+								</InddrivelseBetalingEvneStruktur>
+								<SammenligningAfIndkomstMånedÅr>
+									<InddrivelseIndkomstForholdKode/>
+									<AnvendtIndkomstMånedÅr>
+										<InddrivelseLønEindkomstStruktur>
+											<INDLønEindkomstMånedÅr/>
+											<INDLønEindkomstMånedBeløb/>
+										</InddrivelseLønEindkomstStruktur>
+									</AnvendtIndkomstMånedÅr>
+									<FørsteIndkomstMånedÅr>
+										<InddrivelseLønEindkomstStruktur>
+											<INDLønEindkomstMånedBeløb/>
+										</InddrivelseLønEindkomstStruktur>
+										<IndkomstTypeKode/>
+									</FørsteIndkomstMånedÅr>
+									<AndenIndkomstMånedÅr>
+										<InddrivelseLønEindkomstStruktur>
+											<INDLønEindkomstMånedBeløb/>
+										</InddrivelseLønEindkomstStruktur>
+										<IndkomstTypeKode/>
+									</AndenIndkomstMånedÅr>
+									<Årsopgørelse>
+										<IndkomstÅr/>
+										<ÅrsopgørelseOpgørelseNummer/>
+										<INDÅrsopgørelseÅrIndkomstNettoBeløb/>
+									</Årsopgørelse>
+								</SammenligningAfIndkomstMånedÅr>
+							</BetalingEvne>
+							<InddrivelseFristOgGebyr>
+								<PåkravSenestePartshøringOgSidsteRettidigBetallingDato>2017-04-11</PåkravSenestePartshøringOgSidsteRettidigBetallingDato>
+								<PåkravGebyrBeløb>123</PåkravGebyrBeløb>
+								<PåkravSidsteRettidigBetalingDato>2017-03-28</PåkravSidsteRettidigBetalingDato>
+								<PåkravPartshøringFristDato>2017-04-11</PåkravPartshøringFristDato>
+								<InddrivelseMeddelelseValgHarModtagetInfoOmPersonoplysninger>true</InddrivelseMeddelelseValgHarModtagetInfoOmPersonoplysninger>
+							</InddrivelseFristOgGebyr>
+							<OCRLinieStruktur>
+								<IND_OCRLinjeType>+71&amp;lt;000000000196501 + 12345678&amp;lt;</IND_OCRLinjeType>
+							</OCRLinieStruktur>
+							<Skyldner>
+								<SkyldnerSendInfoOmPersonoplysninger>true</SkyldnerSendInfoOmPersonoplysninger>
+							</Skyldner>
+							<InddrivelseAfdragsordning>
+								<AfdragBeløb/>
+								<AfdragFrekvens/>
+								<FørsteAfdragDato/>
+								<AfdragOrdningID/>
+								<AfdragOrdningType/>
+								<KulanceUdløbDato/>
+							</InddrivelseAfdragsordning>
+						</InddrivelseMeddelelseAfdragOrdningStruktur>
+					</MeddelelseIndhold>
+					<MeddelelseTypeNummer>IND0704AFD_01</MeddelelseTypeNummer>
+					<MeddelelseAfsenderReference>${Properties#StartRef}</MeddelelseAfsenderReference>
+					<KundeNummer>0505753925</KundeNummer>
+					<MeddelelseOprettetAfMedarbejder>PENO</MeddelelseOprettetAfMedarbejder>
+					<KanalAdresseNavn>
+						<KundeNavn>SKAT Inddrivelse Test Person 156</KundeNavn>
+					</KanalAdresseNavn>
+					<KanalAdresseStruktur>
+						<AdresseValg>
+							<AlternativAdresseStruktur>
+								<AlternativAdresse>
+									<AlternativAdresseFortløbendeNummer>0</AlternativAdresseFortløbendeNummer>
+									<AlternativAdresseAnvendelseKode>0</AlternativAdresseAnvendelseKode>
+									<AlternativAdresseAdresseLinie1>SKAT Inddrivelse Test Person 156</AlternativAdresseAdresseLinie1>
+									<AlternativAdresseAdresseLinie2>null, null</AlternativAdresseAdresseLinie2>
+									<AdresseTypeKode>0</AdresseTypeKode>
+									<LandKode>DK</LandKode>
+								</AlternativAdresse>
+							</AlternativAdresseStruktur>
+						</AdresseValg>
+					</KanalAdresseStruktur>
+					<MeddelelseTypeSkalIKommunikationMappe>true</MeddelelseTypeSkalIKommunikationMappe>
+					<Filer/>
+				</Meddelelse>
+			</ns:Meddelelser></ns:MeddelelseMultiSendEkspres_I>
+	</soapenv:Body>
+</soapenv:Envelope>

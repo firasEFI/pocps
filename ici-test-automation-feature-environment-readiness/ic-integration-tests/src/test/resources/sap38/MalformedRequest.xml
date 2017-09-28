@@ -1,0 +1,6 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/"
+                  xmlns:ns1="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:FinansKontoBilagOpr

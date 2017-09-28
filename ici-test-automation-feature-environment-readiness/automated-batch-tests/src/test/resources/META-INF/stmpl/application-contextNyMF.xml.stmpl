@@ -1,0 +1,32 @@
+<!-- [TP] {{var db=infrastructure:/infrastructure/servers/server[roles/role[name='Database']]}}-->
+<!-- [TP] {{var nymfUser=users:/users/user[usercontext='NyMFBatch']}}-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	  http://www.springframework.org/schema/beans/spring-beans-4.3.xsd http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="dk.rim.is.abt"/>
+
+    <bean id="entityManagerFactory"
+          class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+
+        <property name="persistenceXmlLocation" value="META-INF/persistenceNyMF.xml" />
+
+        <property name="persistenceUnitName" value="test-jpa" />
+        <property name="jpaVendorAdapter">
+            <bean
+                    class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="dataSource" class="oracle.jdbc.pool.OracleDataSource" destroy-method="close">
+        <property name="URL" value="jdbc:oracle:thin:@{{${db}/internalIP}}:{{${db}/roles/role[name='Database']/port}}:{{${db}/roles/role[name='Database']/SID}}" />
+        <property name="user" value="{{${nymfUser}/username}}" />
+        <property name="password" value="{{${nymfUser}/password}}" />
+    </bean>
+</beans>

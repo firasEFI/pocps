@@ -1,0 +1,24 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <fase2.1:LønIndeholdelseAjourfør_I xmlns:fase2.1="http://skat.dk/begrebsmodel/2009/01/15/" xmlns:n1="http://www.altova.com/samplexml/other-namespace"
+                                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/"
+                                           xsi:schemaLocation="http://skat.dk/begrebsmodel/2009/01/15/ file:///H:/Koncerncenter%20(KON)/F%c3%a6lles/eI/eIndkomst/%c3%85%20-%20Systemejer/XML/L%c3%b8nIndeholdelseAjourf%c3%b8r/package/view/LoenIndeholdelseAjourfoer_IType.xsd">
+            <fase2.1:Kontekst>
+            </fase2.1:Kontekst>
+            <fase2.1:LønIndeholdelsePersonSamlingInddata>
+                <fase2.1:LønIndeholdelsePersonSamling>
+                    <fase2.1:PersonCPRNummer>1805859979</fase2.1:PersonCPRNummer>
+                    <fase2.1:LønIndeholdelseTrækProcentStruktur>
+                        <fase2.1:LønIndeholdelseProcentStruktur>
+                            <fase2.1:LønIndeholdelseTræk>
+                                <fase2.1:LønIndeholdelseTrækProcent>21</fase2.1:LønIndeholdelseTrækProcent>
+                                <fase2.1:LønIndeholdelseGyldigFra>2014-06-01</fase2.1:LønIndeholdelseGyldigFra>
+                            </fase2.1:LønIndeholdelseTræk>
+                        </fase2.1:LønIndeholdelseProcentStruktur>
+                    </fase2.1:LønIndeholdelseTrækProcentStruktur>
+                </fase2.1:LønIndeholdelsePersonSamling>
+            </fase2.1:LønIndeholdelsePersonSamlingInddata>
+        </fase2.1:LønIndeholdelseAjourfør_I>
+    </soapenv:Body>
+</soapenv:Envelope>

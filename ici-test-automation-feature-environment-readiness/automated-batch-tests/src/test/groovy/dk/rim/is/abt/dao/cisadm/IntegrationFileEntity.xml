@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="dk.rim.is.abt.dao.cisadm.IntegrationFileEntity">
+        <table name="INTEGRATION_FILE" schema="CISADM" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="ID" precision="20"/>
+            </id>
+            <basic name="uuid">
+                <column name="UUID" nullable="false"/>
+            </basic>
+            <basic name="version">
+                <column name="VERSION" precision="20"/>
+            </basic>
+            <basic name="integrationFileTypeId">
+                <column name="INTEGRATION_FILE_TYPE_ID" precision="2147483646"/>
+            </basic>
+            <basic name="rawFileContents">
+                <column name="RAW_FILE_CONTENTS" precision="-1"/>
+            </basic>
+            <basic name="filename">
+                <column name="FILENAME" length="100"/>
+            </basic>
+            <basic name="step">
+                <column name="STEP" length="50"/>
+            </basic>
+            <basic name="status">
+                <column name="STATUS" length="50"/>
+            </basic>
+            <basic name="statusTime">
+                <column name="STATUS_TIME" precision="6"/>
+            </basic>
+            <basic name="statusBy">
+                <column name="STATUS_BY" length="50"/>
+            </basic>
+            <basic name="fileGeneratedTime">
+                <column name="FILE_GENERATED_TIME" nullable="false" precision="6"/>
+            </basic>
+            <basic name="createdTime">
+                <column name="CREATED_TIME" precision="6"/>
+            </basic>
+            <basic name="createdBy">
+                <column name="CREATED_BY" length="50"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

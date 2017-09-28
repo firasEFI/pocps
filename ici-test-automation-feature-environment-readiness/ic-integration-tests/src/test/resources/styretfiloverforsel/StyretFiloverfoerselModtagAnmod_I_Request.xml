@@ -1,0 +1,21 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+        {SAML_HEADER}
+    </soap:Header>
+    <soap:Body>
+        <ns:StyretFiloverførselModtagAnmod_I xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+            <ns:Kontekst>
+                <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
+                    <tsk:TransaktionsID>52ea66ca-4778-4877-b2a2-0b99748eb4f0</tsk:TransaktionsID>
+                    <tsk:TransaktionsTid>2016-12-28T11:14:18</tsk:TransaktionsTid>
+                    <tsk:BrugerKode>ICISI</tsk:BrugerKode>
+                </tsk:HovedOplysninger>
+            </ns:Kontekst>
+            <ns:StyretFiloverførselServiceQName>PersonHaendelseSamlingHentServiceAsynkron</ns:StyretFiloverførselServiceQName>
+            <ns:StyretFiloverførselBeskedQName>ns:StyretFiloverførselModtagAnmod_I</ns:StyretFiloverførselBeskedQName>
+            <ns:StyretFiloverførselDownloadURL>ftp://127.239.61.153:21/D170209A.xml</ns:StyretFiloverførselDownloadURL>
+            <ns:StyretFiloverførselBrugerNavn>dwftpdemo.ccta.dk|dwcsc</ns:StyretFiloverførselBrugerNavn>
+            <ns:StyretFiloverførselPassword>Besbac30</ns:StyretFiloverførselPassword>
+        </ns:StyretFiloverførselModtagAnmod_I>
+    </soap:Body>
+</soap:Envelope>

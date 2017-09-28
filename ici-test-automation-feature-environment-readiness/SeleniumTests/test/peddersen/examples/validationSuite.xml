@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Team Peddersen Validation Test Suite" parallel="methods" thread-count="4">
+    <test name="Validerings Tests (Hovedveje)">
+        <groups>
+            <run>
+            </run>
+        </groups>
+        <classes>
+            <class name="peddersen.examples.TestOpretFordring" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,13 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2008/01/01/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<ns:IndkomstOplysningSumHent_I>
+			<ns:Kontekst>
+				<!--You may enter ANY elements at this point-->
+			</ns:Kontekst>
+			<ns:IndkomstOplysningSumInddata>
+				<ns:AbonnentAdgangStruktur>
+					<ns:AbonnentTypeKode>2166</ns:AbonnentTypeKode>
+					<ns:AbonnementTypeKode>3189</ns:AbonnementTypeKode>
+					<ns:AdgangFormålTypeKode>564</ns:AdgangFormålTypeKode>
+				</ns:AbonnentAdgangStruktur>

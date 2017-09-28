@@ -1,0 +1,15 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:StyretFiloverførselModtagAfslut_I>
+            <ns:Kontekst>
+                <ho:HovedOplysninger xmlns:ho="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+                    <ho:TransaktionsID>52ea66ca-4778-4877-b2a2-0b99748eb4f0</ho:TransaktionsID>
+                    <ho:TransaktionsTid>2016-12-28T11:14:18</ho:TransaktionsTid>
+                </ho:HovedOplysninger>
+            </ns:Kontekst>
+            <ns:StyretFiloverførselServiceQName>serviceqname</ns:StyretFiloverførselServiceQName>
+            <ns:StyretFiloverførselBeskedQName>beskedqname</ns:StyretFiloverførselBeskedQName>
+        </ns:StyretFiloverførselModtagAfslut_I>
+    </soapenv:Body>
+</soapenv:Envelope>

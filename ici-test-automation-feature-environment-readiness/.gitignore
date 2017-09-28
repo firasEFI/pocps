@@ -1,0 +1,108 @@
+﻿**/classes/
+**/build/
+**/.gradle/
+**/.idea/
+**/*.iml
+**/*.log
+**/target/
+
+*.class
+*.classpath
+*.project
+*.settings/
+test-output
+*.ipr
+*.iws
+
+*.properties
+
+# /Modules/
+/testdata/
+/TestCases/
+/pageObjects/
+/tools/ #
+
+**/doc/
+*.png
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+#*.jar#
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+emailable-report.html
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignor�r test output #
+/test-output/
+
+# Ignor�r screenshots (dette g�res ogs� redundant med en gitignore i screenshot-folderen) #
+/screenshots/
+
+#Ignor�r bin#
+/bin/testdata/
+
+/bin/
+
+
+#Midlertidige Excel-filer#
+src/testdata/~*.xlsx
+
+
+# Eclipse stuff #
+############
+.metadata/
+.recommenders/
+
+SeleniumTests/src/modules/Test360GradersSearch.java
+SeleniumTests/src/modules/AndenAktoer360g.java
+SeleniumTests/src/modules/BaseNavigation.java
+SeleniumTests/src/modules/Dokument360g.java
+SeleniumTests/src/modules/Fordringshaver360g.java
+SeleniumTests/src/modules/Sag360g.java
+SeleniumTests/src/modules/SkyldnerFordringshaver360g.java
+SeleniumTests/src/modules/TableUtil.java
+SeleniumTests/src/modules/Test360GradersAndAkt.java
+SeleniumTests/src/modules/Test360GradersDok.java
+SeleniumTests/src/modules/Test360GradersFord.java
+SeleniumTests/src/modules/Test360GradersSager.java
+SeleniumTests/src/modules/Test360GradersSkyldFord.java
+SeleniumTests/src/modules/TimeTravel1uge.java
+SeleniumTests/src/modules/TimeTravel2uger.java
+SeleniumTests/src/modules/TimeTravelNu.java
+SeleniumTests/src/modules/TimeTravelTest.java
+SeleniumTests/src/testobjects/IU215.java
+SeleniumTests/test/modules/IU213_360_Frems_Skyld_via_CPR.java
+SeleniumTests/test/modules/Test360GradersSearchTest.java
+SeleniumTests/test/modules/TestDataDok.java
+SeleniumTests/test/modules/TestTest.java

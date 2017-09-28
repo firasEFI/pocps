@@ -1,0 +1,17 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:MeddelelseMultiSend_I revision="gero et">
+            <ns:Kontekst>
+            </ns:Kontekst>
+            <ns:FagsystemNavn>sonoras imperio</ns:FagsystemNavn>
+            <ns:MeddelelseBatchID>100</ns:MeddelelseBatchID>
+            <ns:Meddelelser>
+                <ns:Meddelelse>
+                    <ns:MeddelelseIndhold>
+                    </ns:MeddelelseIndhold>
+                    <ns:MeddelelseTypeNummer>quae divum incedo</ns:MeddelelseTypeNummer>
+                    <ns:MeddelelseAfsenderReference>100</ns:MeddelelseAfsenderReference>
+                    <ns:KundeNummer>verrantque</ns:KundeNummer>
+                    <ns:GensendMeddelelseID>100</ns:GensendMeddelelseID>
+                    <ns:Kund

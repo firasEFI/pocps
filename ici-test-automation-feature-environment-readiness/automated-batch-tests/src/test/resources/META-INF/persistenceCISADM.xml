@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+
+    <persistence-unit name="test-jpa" transaction-type="RESOURCE_LOCAL">
+        
+        <class>dk.rim.is.abt.dao.cisadm.CiCcEntity</class>
+        <class>dk.rim.is.abt.dao.cisadm.CiPerEntity</class>
+        <class>dk.rim.is.abt.dao.cisadm.CiPerCharEntity</class>
+        <class>dk.rim.is.abt.dao.cisadm.CiPerIdEntity</class>
+        <class>dk.rim.is.abt.dao.cisadm.CiPerKEntity</class>
+        <class>dk.rim.is.abt.dao.cisadm.C1AddressEntity</class>
+        <class>dk.rim.is.abt.dao.cisadm.CiPerAddrEntity</class>
+        <class>dk.rim.is.abt.dao.cisadm.CiPerNameEntity</class>
+        <class>dk.rim.is.abt.dao.cisadm.IntegrationFileEntity</class>
+        <class>dk.rim.is.abt.dao.cisadm.IntegrationFileTypeEntity</class>
+
+    </persistence-unit>
+
+</persistence>

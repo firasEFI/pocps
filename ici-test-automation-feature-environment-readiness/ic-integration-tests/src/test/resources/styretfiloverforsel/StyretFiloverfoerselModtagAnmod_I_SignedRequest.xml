@@ -1,0 +1,45 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+    <soapenv:Header>
+        <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <saml1:Assertion AssertionID="_306fcc65-4aaa-4b4f-b14b-0076fc4655c1" IssueInstant="2016-12-21T09:51:10.728Z" Issuer="http://ind.skat.dk/int-test" MajorVersion="1" MinorVersion="1" xsi:type="saml1:AssertionType" xmlns:saml1="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <saml1:AuthenticationStatement AuthenticationInstant="2016-12-21T09:51:11.344Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified" xsi:type="saml1:AuthenticationStatementType">
+                    <saml1:Subject>
+                        <saml1:NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=92A7FEAC-C52B-A06E-EE01-7615474939C6,ou=skatSystem,ou=internal,ou=entities,dc=skat,dc=dk</saml1:NameIdentifier>
+                        <saml1:SubjectConfirmation>
+                            <saml1:ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</saml1:ConfirmationMethod>
+                        </saml1:SubjectConfirmation>
+                    </saml1:Subject>
+                </saml1:AuthenticationStatement>
+                <saml1:AttributeStatement>
+                    <saml1:Subject>
+                        <saml1:NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=92A7FEAC-C52B-A06E-EE01-7615474939C6,ou=skatSystem,ou=internal,ou=entities,dc=skat,dc=dk</saml1:NameIdentifier>
+                        <saml1:SubjectConfirmation>
+                            <saml1:ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</saml1:ConfirmationMethod>
+                        </saml1:SubjectConfirmation>
+                    </saml1:Subject>
+                    <saml1:Attribute AttributeName="token-requestor" AttributeNamespace="http://cxf.apache.org/sts">
+                        <saml1:AttributeValue xsi:type="xsd:string">authenticated</saml1:AttributeValue>
+                    </saml1:Attribute>
+                    <saml1:Attribute AttributeName="Groups" AttributeNamespace="urn:bea:security:saml:groups">
+                        <saml1:AttributeValue xsi:type="xsd:string">LoggedInETRPRG</saml1:AttributeValue>
+                        <saml1:AttributeValue xsi:type="xsd:string">IP.Inddrivelsen.Aktør.System.PRG</saml1:AttributeValue>
+                        <saml1:AttributeValue xsi:type="xsd:string">AlleETRPRG</saml1:AttributeValue>
+                        <saml1:AttributeValue xsi:type="xsd:string">KlientvælgerPRG</saml1:AttributeValue>
+                        <saml1:AttributeValue xsi:type="xsd:string">CalculateRolesPRG</saml1:AttributeValue>
+                    </saml1:Attribute>
+                </saml1:AttributeStatement>
+            </saml1:Assertion>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:StyretFiloverførselModtagAnmod_I revision="gero et">
+            <ns:Kontekst>
+            </ns:Kontekst>
+            <ns:StyretFiloverførselServiceQName>1</ns:StyretFiloverførselServiceQName>
+            <ns:StyretFiloverførselBeskedQName>1</ns:StyretFiloverførselBeskedQName>
+            <ns:StyretFiloverførselDownloadURL>1</ns:StyretFiloverførselDownloadURL>
+            <ns:StyretFiloverførselBrugerNavn>1</ns:StyretFiloverførselBrugerNavn>
+            <ns:StyretFiloverførselPassword>1</ns:StyretFiloverførselPassword>
+        </ns:StyretFiloverførselModtagAnmod_I>
+    </soapenv:Body>
+</soapenv:Envelope>
