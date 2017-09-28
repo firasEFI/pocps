@@ -1,8 +1,0 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
-    <soapenv:Body> 
-<fase2:eSkattekortHent_I xmlns:fase2="http://skat.dk/begrebsmodel/2008/01/01/" xmlns:n1="http://www.altova.com/samplexml/other-namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/" xsi:schemaLocation="http://skat.dk/begrebsmodel/2008/01/01/ file:///H:/Koncerncenter%20(KON)/F%c3%a6lles/eI/eIndkomst/%c3%85%20-%20Systemejer/XML/S%c3%a6rskiltL%c3%b8n/package/view/eSkattekortHent_IType.xsd">
-	<fase2:Kontekst>
-	</fase2:Kontekst>
-	<fase2:eSkattekortBrugerVirksomhedSamling>
-		<fase2:eSkattekortBrugerVirksomhed>
-			<fase2:VirksomhedSENummer>19552101</fase2:Virk

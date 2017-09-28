@@ -1,5 +1,0 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/ip/security/xml/schemas/service/2011/06/09/" xmlns:ns1="http://skat.dk/ip/security/xml/schemas/service/2011/06/09/" >
-    <soapenv:Header/>
-    <soapenv:Body>
-    </soapenv:Body>
-</soapenv:Envelope>

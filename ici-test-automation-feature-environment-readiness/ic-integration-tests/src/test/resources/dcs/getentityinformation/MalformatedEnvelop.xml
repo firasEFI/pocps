@@ -1,7 +1,0 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
-    <env:Body xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
-        <ns:GetAdminEntityInformationInput xmlns:ns="http://skat.dk/ip/security/xml/schemas/service/2007/02/20/">
-            <ns:EntityId xsi:type="ns:SkatEmployeeParameterType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                         xmlns:ns1="http://skat.dk/ip/security/xml/schemas/2007/02/14/">
-                <ns1:DestinguishedName xmlns:ns1="http://skat.dk/ip/security/xml/schemas/2007/02/14/">
-                    skatGu

@@ -1,9 +1,0 @@
-<ns:MeddelelseStatusMultiHent_I xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
-    <ns:SøgeValg>
-        <ns:EnkeltMeddelelseValg>
-            <ns:FagsystemNavn>EFI</ns:FagsystemNavn>
-            <ns:MeddelelseBatchID>${Properties#MeddelelseBatchID}</ns:MeddelelseBatchID>
-            <ns:MeddelelseID>${Properties#MeddelelseID}</ns:MeddelelseID>
-        </ns:EnkeltMeddelelseValg>
-    </ns:SøgeValg>
-</ns:MeddelelseStatusMultiHent_I>

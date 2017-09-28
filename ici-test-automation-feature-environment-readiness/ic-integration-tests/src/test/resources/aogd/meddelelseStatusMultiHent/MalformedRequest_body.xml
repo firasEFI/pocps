@@ -1,6 +1,0 @@
-<ns:MeddelelseStatusMultiHent_I xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
-    <ns:Kontekst>
-        <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
-            <tsk:TransaktionsID>adce5e70-520b-4a70-a971-87e960546bcd_TEST</tsk:TransaktionsID>
-            <tsk:TransaktionsTid>2016-09-21T08:07:22Z</tsk:TransaktionsTid>
-        </tsk:HovedOplysni

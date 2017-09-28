@@ -1,1 +1,0 @@
-docker build -t maven-jenkins-slave:3-jdk-$1 jdk-$1/.

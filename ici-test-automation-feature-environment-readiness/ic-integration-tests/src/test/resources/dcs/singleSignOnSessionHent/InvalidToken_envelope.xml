@@ -1,7 +1,0 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/xml/schemas/sikkerhed/2012/04/16/">
-    <soapenv:Body>
-        <ns:SingleSignOnSessionHent_I>
-            <ns:SingleSignOnSessionIdent>00000000-0000-0000-0000-000000000036</ns:SingleSignOnSessionIdent>
-        </ns:SingleSignOnSessionHent_I>
-    </soapenv:Body>
-</soapenv:Envelope>
