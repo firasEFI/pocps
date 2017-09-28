@@ -22,7 +22,7 @@ PSRMENV="psrmdev"
 
 sudo -u $OSUSER -i<<EOT
 #Wait until PSRM can reach the database
-while  /software/oracle/product/oracle_client/12.1.0.2/bin/sqlplus CISADM/Icisk2016@orasqlserver:1521/ORCLCDB | grep Connected; do sleep 10; done
+while  /software/oracle/product/oracle_client/12.1.0.2/bin/sqlplus CISADM/Icisk2016@orasqlserver:1521/ORCLCDB | grep Connected; do sleep 15; done
 
 EOT
 
